@@ -6,6 +6,10 @@ import "./company-logo.css";
 
 export default function CompanyLogo() {
   return (
-    <img className="company-logo" src={logo} alt="Coffeeroasters logo" />
+    <img 
+        className="company-logo" 
+        src={logo} 
+        alt="Coffeeroasters logo" 
+    />
   )
 }
