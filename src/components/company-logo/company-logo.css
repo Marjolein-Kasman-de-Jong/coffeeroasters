@@ -1,8 +1,8 @@
 /* Page header company logo */
 
 .page-header .company-logo {
-    width: 43.47%;
-    aspect-ratio: 163 / 18;
+    width: 163px;
+    height: 18px;
 }
 
 @media screen and (min-width: 768px) {

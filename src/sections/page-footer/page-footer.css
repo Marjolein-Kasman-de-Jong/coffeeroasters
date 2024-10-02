@@ -1,0 +1,11 @@
+.page-footer {
+    position: relative;
+    z-index: -20;
+}
+
+@media screen and (min-width: 768px) {
+    .page-footer {
+        position: unset;
+        z-index: 0;
+    }
+}

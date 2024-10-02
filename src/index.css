@@ -24,6 +24,20 @@ textarea {
   --grey: #83888F;
 }
 
+/* Main */
+
+main {
+  position: relative;
+  z-index: -20;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    position: unset;
+    z-index: 0;
+  }
+}
+
 /* Typography */
 
 /* --Headings */
@@ -51,6 +65,7 @@ textarea {
 }
 
 .heading-4 {
+  /* Nav items */
   font-size: 1.5rem;
   line-height: 2rem;
 }
@@ -77,6 +92,12 @@ textarea {
   line-height: 0.9375rem;
   letter-spacing: 0.05769rem;
   text-transform: uppercase;
+  transition: all .3s;
+}
+
+.paragraph-2:hover {
+  cursor: pointer;
+  color: var(--dark-grey-blue);
 }
 
 /* --Buttons */

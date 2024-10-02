@@ -1,18 +1,22 @@
 .page-header {
-    padding: 8.53% 24px;
+    height: 66px;
+    padding: 0 8.53%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    background: var(--light-cream);
 }
 
 @media screen and (min-width: 768px) {
     .page-header {
-        padding: 5.21% 40px;
+        height: auto;
+        padding: 40px 5.21%;
     }
 }
 
 @media screen and (min-width: 1440px) {
     .page-header {
-        padding: 2.99% 80px;
+        padding: 43px 2.99%;
     }
 }
