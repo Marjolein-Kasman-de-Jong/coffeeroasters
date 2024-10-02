@@ -6,12 +6,18 @@ import Home from "./pages/home/Home";
 import AboutUs from "./pages/about-us/AboutUs";
 import Subscribe from "./pages/subscribe/Subscribe";
 
+// Sections
+import PageHeader from "./sections/page-header/PageHeader";
+import PageFooter from "./sections/page-footer/PageFooter";
+
 // Styles
 import "./App.css";
 
 function App() {
   return (
-    <Routes>
+    <>
+      <PageHeader />
+      <Routes>
         <Route
           path="/"
           element={<Home />}
@@ -24,7 +30,9 @@ function App() {
           path="/subscribe"
           element={<Subscribe />}
         />
-    </Routes>
+      </Routes>
+      <PageFooter />
+    </>
   )
 }
 
