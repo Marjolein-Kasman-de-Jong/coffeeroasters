@@ -1,4 +1,5 @@
 // Sections
+import HomeHero from "../../sections/home-hero/HomeHero";
 import HomeCollection from "../../sections/home-collection/HomeCollection";
 import HomeUsps from "../../sections/home-usps/HomeUsps";
 import HomeBusinessProcess from "../../sections/home-business-process/HomeBusinessProcess";
@@ -9,6 +10,7 @@ import "./home.css";
 export default function Home() {
     return (
         <main>
+            <HomeHero />
             <HomeCollection />
             <HomeUsps />
             <HomeBusinessProcess />
