@@ -3,6 +3,8 @@ import "./page-footer.css";
 
 export default function PageFooter() {
   return (
-    <div>PageFooter</div>
+    <footer className="page-footer">
+        PageFooter
+    </footer>
   )
 }

@@ -1,8 +1,8 @@
 // Sections
-import HomeHero from "../../sections/home-hero/HomeHero";
-import HomeCollection from "../../sections/home-collection/HomeCollection";
-import HomeUsps from "../../sections/home-usps/HomeUsps";
-import HomeBusinessProcess from "../../sections/home-business-process/HomeBusinessProcess";
+import Hero from "../../sections/hero/Hero";
+import Collection from "../../sections/collection/Collection";
+import Usps from "../../sections/usps/Usps";
+import BusinessProcess from "../../sections/business-process/BusinessProcess";
 
 // Styles
 import "./home.css";
@@ -10,10 +10,10 @@ import "./home.css";
 export default function Home() {
     return (
         <main>
-            <HomeHero />
-            <HomeCollection />
-            <HomeUsps />
-            <HomeBusinessProcess />
+            <Hero />
+            <Collection />
+            <Usps />
+            <BusinessProcess />
         </main>
     )
 }

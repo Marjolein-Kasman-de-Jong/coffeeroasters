@@ -1,8 +1,8 @@
 // Sections
-import AboutUsHero from "../../sections/about-us-hero/AboutUsHero";
-import AboutUsCommitment from "../../sections/about-us-commitment/AboutUsCommitment";
-import AboutUsQuality from "../../sections/about-us-quality/AboutUsQuality";
-import AboutUsHeadquarters from "../../sections/about-us-headquarters/AboutUsHeadquarters";
+import Hero from "../../sections/hero/Hero";
+import Commitment from "../../sections/commitment/Commitment";
+import Quality from "../../sections/quality/Quality";
+import Headquarters from "../../sections/headquarters/Headquarters";
 
 // Styles
 import "./about-us.css";
@@ -10,10 +10,10 @@ import "./about-us.css";
 export default function AboutUs() {
   return (
     <main>
-        <AboutUsHero />
-        <AboutUsCommitment />
-        <AboutUsQuality />
-        <AboutUsHeadquarters />        
+        <Hero />
+        <Commitment />
+        <Quality />
+        <Headquarters />        
     </main>
   )
 }
