@@ -10,10 +10,10 @@ import "./about-us.css";
 export default function AboutUs() {
   return (
     <main>
-        <Hero />
-        <Commitment />
-        <Quality />
-        <Headquarters />        
+      <Hero />
+      <Commitment />
+      <Quality />
+      <Headquarters />
     </main>
   )
 }

@@ -24,6 +24,12 @@ textarea {
   --grey: #83888F;
 }
 
+/* Body */
+
+body {
+  background-color: var(--light-cream);
+}
+
 /* Main */
 
 main {
@@ -44,23 +50,58 @@ main {
 
 /* Typography */
 
+html {
+  font-size: 16px;
+}
+
 /* --Headings */
 
 [class^="heading"] {
-  color: var(--dark-grey-blue);
   font-family: "Fraunces";
   font-style: normal;
   font-weight: 900;
 }
 
 .heading-1 {
-  font-size: 4.5rem;
-  line-height: 4.5rem;
+  /* ----Home/subscribe hero title */
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  color: var(--light-cream);
+}
+
+@media screen and (min-width: 768px) {
+  .heading-1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .heading-1 {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
 }
 
 .heading-2 {
-  font-size: 2.5rem;
-  line-height: 3rem;
+  /* ----About us hero title */
+  color: var(--light-cream);
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+}
+
+@media screen and (min-width: 758px) {
+  .heading-2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .heading-2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
 }
 
 .heading-3 {
@@ -78,12 +119,23 @@ main {
 
 .paragraph-1 {
   /* ----Regular paragraph */
-  color: var(--dark-grey-blue);
   font-family: "Barlow";
-  font-size: 1rem;
+  font-size: 0.9375rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.625rem;
+  line-height: 1.5625rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .paragraph-1 {
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+}
+
+.hero .paragraph-1 {
+  /* ----Hero paragraph */
+  color: var(--light-cream);
 }
 
 .paragraph-2 {

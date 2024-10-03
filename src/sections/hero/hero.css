@@ -1,0 +1,51 @@
+.hero {
+    width: 87.2%;
+    max-width: 327px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        width: 89.71%;
+        max-width: unset;
+        padding: 0 58px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .hero {
+        width: 88.89%;
+        max-width: 1280px;
+        padding: 0 85px;
+    }
+}
+
+.hero article {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .hero article {
+        max-width: 398px;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .hero article {
+        max-width: 493px;
+    }
+}
+
+.hero article p {
+    opacity: .8;
+}

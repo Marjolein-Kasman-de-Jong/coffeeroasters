@@ -8,12 +8,13 @@ function useScreenWidth(breakpoint = 768) {
     };
 
     useEffect(() => {
-        // Initial check
+        // Initial setting
         updateMedia();
         
         // Resize listener
         window.addEventListener("resize", updateMedia);
 
+        // Cleanup
         return () => window.removeEventListener("resize", updateMedia);
     }, [breakpoint]);
 

@@ -9,9 +9,9 @@ import "./subscribe.css";
 export default function Subscribe() {
   return (
     <main>
-        <Hero />
-        <BusinessProcess />
-        <OrderForm />
+      <Hero />
+      <BusinessProcess />
+      <OrderForm />
     </main>
   )
 }
