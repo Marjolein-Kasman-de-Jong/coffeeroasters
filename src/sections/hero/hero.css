@@ -4,7 +4,9 @@
     margin: 0 auto;
     padding: 0 24px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 39px;
     border-radius: 10px;
     background-size: cover;
     background-position: center;
@@ -15,6 +17,7 @@
         width: 89.71%;
         max-width: unset;
         padding: 0 58px;
+        gap: 40px;
     }
 }
 
@@ -23,6 +26,7 @@
         width: 88.89%;
         max-width: 1280px;
         padding: 0 85px;
+        gap: 56px;
     }
 }
 

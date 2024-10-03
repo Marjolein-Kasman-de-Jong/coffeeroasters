@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
+// Components
+import Button from "../../components/button/Button";
+
 // Constants
 import sectionHeroContent from "../../constants/sectionHeroContent";
 
@@ -61,6 +64,12 @@ export default function Hero() {
           {paragraph}
         </p>
       </article>
+      {
+        location === "/" &&
+        <Button>
+          Create your plan
+        </Button>
+      }
     </section>
   )
 }
