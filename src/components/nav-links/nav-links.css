@@ -1,4 +1,4 @@
-.nav-links {
+.page-header .nav-links {
     width: 100%;
     max-height: 0px;
     padding: 0 0;
@@ -16,15 +16,15 @@
     transition: max-height .5s, padding .5s, opacity .5s;
 }
 
-.nav-links.open {
+.page-header .nav-links.open {
     max-height: calc(100vh - 66px);
     padding: 40px 0;
     opacity: 1;
 }
 
 @media screen and (min-width: 768px) {
-    .nav-links,
-    .nav-links.open {
+    .page-header .nav-links,
+    .page-header .nav-links.open {
         width: auto;
         height: auto;
         padding: 0 0;
