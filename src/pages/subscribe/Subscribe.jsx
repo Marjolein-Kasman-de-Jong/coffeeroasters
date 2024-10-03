@@ -8,10 +8,10 @@ import "./subscribe.css";
 
 export default function Subscribe() {
   return (
-    <div>
+    <main>
         <Hero />
         <BusinessProcess />
         <OrderForm />
-    </div>
+    </main>
   )
 }
