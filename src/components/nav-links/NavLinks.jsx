@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 // Hooks
 import useScreenWidth from "../../hooks/useScreenWidth";
 
@@ -12,13 +14,19 @@ export default function NavLinks({ isOpen }) {
             {
                 <ul className={`nav-links ${isOpen || !isMobile ? "open" : ""}`}>
                     <li className={isMobile ? "heading-4" : "paragraph-2"}>
-                        Home
+                        <Link to="/">
+                            Home
+                        </Link>
                     </li>
                     <li className={isMobile ? "heading-4" : "paragraph-2"}>
-                        About Us
+                        <Link to="/about-us">
+                            About Us
+                        </Link>
                     </li>
                     <li className={isMobile ? "heading-4" : "paragraph-2"}>
-                        Create Your Plan
+                        <Link to="/subscribe">
+                            Create Your Plan
+                        </Link>
                     </li>
                 </ul>
             }

@@ -100,6 +100,16 @@ main {
   color: var(--dark-grey-blue);
 }
 
+/* --Links */
+
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* --Buttons */
 
 .button-1 {
