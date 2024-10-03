@@ -17,6 +17,7 @@
 }
 
 .page-header .nav-links.open {
+    height: calc(100vh - 66px);
     max-height: calc(100vh - 66px);
     padding: 40px 0;
     opacity: 1;
