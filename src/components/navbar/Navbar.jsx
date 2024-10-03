@@ -19,7 +19,10 @@ export default function Navbar() {
 
     return (
         <nav className="navbar">
-            <NavLinks isOpen={isOpen} />
+            <NavLinks 
+                isOpen={isOpen} 
+                toggleIsOpen={toggleIsOpen} 
+            />
             <div 
                 className="hamburger-menu-icon" 
                 onClick={toggleMenu}

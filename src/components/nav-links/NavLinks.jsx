@@ -6,25 +6,38 @@ import useScreenWidth from "../../hooks/useScreenWidth";
 // Styles
 import "./nav-links.css";
 
-export default function NavLinks({ isOpen }) {
+export default function NavLinks({ isOpen, toggleIsOpen }) {
     const isMobile = useScreenWidth();
+
+    const handleClick = () => {
+        toggleIsOpen(false);
+    }
 
     return (
         <>
             {
                 <ul className={`nav-links ${isOpen || !isMobile ? "open" : ""}`}>
                     <li className={isMobile ? "heading-4" : "paragraph-2"}>
-                        <Link to="/">
+                        <Link 
+                            to="/" 
+                            onClick={handleClick}
+                        >
                             Home
                         </Link>
                     </li>
                     <li className={isMobile ? "heading-4" : "paragraph-2"}>
-                        <Link to="/about-us">
+                        <Link 
+                            to="/about-us" 
+                            onClick={handleClick}
+                        >
                             About Us
                         </Link>
                     </li>
                     <li className={isMobile ? "heading-4" : "paragraph-2"}>
-                        <Link to="/subscribe">
+                        <Link 
+                            to="/subscribe" 
+                            onClick={handleClick}
+                        >
                             Create Your Plan
                         </Link>
                     </li>
