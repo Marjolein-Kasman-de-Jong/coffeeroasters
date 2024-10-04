@@ -9,7 +9,7 @@ import "./home.css";
 
 export default function Home() {
     return (
-        <main>
+        <main className="home">
             <Hero />
             <Collection />
             <Usps />

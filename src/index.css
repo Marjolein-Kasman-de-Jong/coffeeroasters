@@ -128,7 +128,7 @@ html {
 }
 
 .heading-4 {
-  /* Nav items */
+  /* Nav items, card titles */
   font-size: 1.5rem;
   line-height: 2rem;
 }
@@ -154,6 +154,23 @@ html {
 .hero .paragraph-1 {
   /* ----Regular paragraph - Hero */
   color: var(--light-cream);
+}
+
+.card .paragraph-1 {
+  /* ----Regular paragraph - Card */
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .card .paragraph-1 {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card .paragraph-1 {
+    text-align: center;
+  }
 }
 
 .paragraph-2 {

@@ -1,3 +1,9 @@
+// Components
+import Card from "../../components/card/Card";
+
+// Constants
+import sectionCollectionContent from "../../constants/sectionCollectionContent";
+
 // Styles
 import "./collection.css";
 
@@ -7,6 +13,13 @@ export default function Collection() {
       <h2 className="heading-3">
         our collection
       </h2>
+      <div className="cards-wrapper">
+        {
+          sectionCollectionContent.map((item) => {
+            return <Card type="product" item={item} />
+          })
+        }
+      </div>
     </section>
   )
 }

@@ -9,7 +9,7 @@ import "./about-us.css";
 
 export default function AboutUs() {
   return (
-    <main>
+    <main className="about-us">
       <Hero />
       <Commitment />
       <Quality />
