@@ -16,7 +16,11 @@ export default function Collection() {
       <div className="cards-wrapper">
         {
           sectionCollectionContent.map((item) => {
-            return <Card type="product" item={item} />
+            return <Card 
+              key={item.title} 
+              type="product" 
+              item={item} 
+            />
           })
         }
       </div>
