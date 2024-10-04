@@ -1,7 +1,26 @@
 button {
     width: 217px;
     height: 56px;
+    margin: 0 auto;
     border: none;
     background-color: var(--dark-cyan);
     border-radius: 6px;
+    transition: background-color .3s;
+}
+
+@media screen and (min-width: 768px) {
+    button {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    button:hover {
+        cursor: pointer;
+        background-color: var(--light-cyan);
+    }
+}
+
+button:active {
+    transform: scale(.98);
 }

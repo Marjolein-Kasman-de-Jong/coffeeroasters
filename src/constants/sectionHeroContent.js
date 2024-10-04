@@ -1,13 +1,13 @@
 // Images
-import home_small from "../../public/home/mobile/image-hero-coffeepress.jpg";
-import home_medium from "../../public/home/tablet/image-hero-coffeepress.jpg";
-import home_large from "../../public/home/desktop/image-hero-coffeepress.jpg";
-import aboutUs_small from "../../public/about/mobile/image-hero-whitecup.jpg";
-import aboutUs_medium from "../../public/about/tablet/image-hero-whitecup.jpg";
-import aboutUs_large from "../../public/about/desktop/image-hero-whitecup.jpg";
-import subscribe_small from "../../public/plan/mobile/image-hero-blackcup.jpg";
-import subscribe_medium from "../../public/plan/tablet/image-hero-blackcup.jpg";
-import subscribe_large from "../../public/plan/desktop/image-hero-blackcup.jpg";
+import home_small from "/home/mobile/image-hero-coffeepress.jpg";
+import home_medium from "/home/tablet/image-hero-coffeepress.jpg";
+import home_large from "/home/desktop/image-hero-coffeepress.jpg";
+import aboutUs_small from "/about/mobile/image-hero-whitecup.jpg";
+import aboutUs_medium from "/about/tablet/image-hero-whitecup.jpg";
+import aboutUs_large from "/about/desktop/image-hero-whitecup.jpg";
+import subscribe_small from "/plan/mobile/image-hero-blackcup.jpg";
+import subscribe_medium from "/plan/tablet/image-hero-blackcup.jpg";
+import subscribe_large from "/plan/desktop/image-hero-blackcup.jpg";
 
 const sectionHeroContent = {
     "/": {

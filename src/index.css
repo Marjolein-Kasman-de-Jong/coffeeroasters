@@ -18,6 +18,7 @@ textarea {
 
 :root {
   --dark-cyan: #0E8784;
+  --light-cyan: #66D2CF;
   --dark-grey-blue: #333D4B;
   --pale-orange: #FDD6BA;
   --light-cream: #FEFCF7;
@@ -134,7 +135,7 @@ html {
 }
 
 .hero .paragraph-1 {
-  /* ----Hero paragraph */
+  /* ----Regular paragraph - Hero */
   color: var(--light-cream);
 }
 
