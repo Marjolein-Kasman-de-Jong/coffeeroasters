@@ -8,6 +8,11 @@ const useIntersectionObserver = (options) => {
     // Create new instance of IntersectionObserver
     const observer = new IntersectionObserver(([entry]) => {
       setIsIntersecting(entry.isIntersecting);
+
+       // Stop observing once the element is visible
+       if (entry.isIntersecting) {
+        observer.disconnect();
+      }
     }, options);
 
     // Start observing target element

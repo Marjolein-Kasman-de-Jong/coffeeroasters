@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 // Hooks
+import useScreenWidth from "../../hooks/useScreenWidth";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 
 // Styles
@@ -8,13 +9,12 @@ import "./card.css";
 
 export default function Card({ type, item }) {
     // Set threshold based on screen width
+    const isMobile = useScreenWidth();
     const [threshold, setThreshold] = useState(0.5);
 
     useEffect(() => {
         const updateThreshold = () => {
-            const screenWidth = window.innerWidth;
-
-            if (screenWidth < 768) {
+            if (isMobile) {
                 setThreshold(0.5);
             } else {
                 setThreshold(1);
