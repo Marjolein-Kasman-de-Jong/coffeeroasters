@@ -3,9 +3,17 @@
     transition: .3s;
 }
 
+@media screen and (min-width: 768px) {
+    .card {
+        flex-direction: row;
+    }
+}
+
 .card.show {
     transform: translateY(0);
 }
+
+/* Product cards */
 
 .card.product {
     width: 75.2%;
@@ -70,5 +78,78 @@
 @media screen and (min-width: 1440px) {
     .card.product div {
         align-items: center;
+    }
+}
+
+/* Usp cards */
+
+.card.usp {
+    width: 100%;
+    max-width: 279px;
+    margin: 0 auto;
+    padding: 72px 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+    border-radius: 8px;
+    background: var(--dark-cyan);
+}
+
+@media screen and (min-width: 768px) {
+    .card.usp {
+        max-width: 573px;
+        padding: 41px 48px 41px 70px;
+        flex-direction: row;
+        gap: 55px;        
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .card.usp {
+        max-width: 350px;
+        margin: 0;
+        padding: 72px 47.5px 48px 47.5px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.card.usp img {
+    width: 34.12%;
+    max-width: 72px;
+}
+
+@media screen and (min-width: 768px) {
+    .card.usp img {
+        width: 12.31%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .card.usp img {
+        width: 28.24%;
+        max-width: 72px;
+    }
+}
+
+.card.usp div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .card.usp div {
+        align-items: flex-start;
+        gap: 16px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .card.usp div {
+        align-items: center;
+        gap: 24px;
     }
 }

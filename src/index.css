@@ -20,6 +20,7 @@ textarea {
   --dark-cyan: #0E8784;
   --light-cyan: #66D2CF;
   --dark-grey-blue: #333D4B;
+  --very-dark-grey-blue: #2C343E;
   --pale-orange: #FDD6BA;
   --light-cream: #FEFCF7;
   --grey: #83888F;
@@ -85,16 +86,27 @@ html {
 }
 
 .heading-2 {
-  /* ----About us hero title */
+  /* ----About us hero title, usps section title */
   color: var(--light-cream);
   font-size: 1.75rem;
   line-height: 1.75rem;
 }
 
-@media screen and (min-width: 758px) {
+.usps .heading-2 {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
   .heading-2 {
     font-size: 2rem;
     line-height: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .usps .heading-2 {
+    font-size: 2rem;
+    line-height: 3rem;
   }
 }
 
@@ -116,7 +128,7 @@ html {
 @media screen and (min-width: 768px) {
   .heading-3 {
     font-size: 6rem;
-    line-height: 6rem;    
+    line-height: 6rem;
   }
 }
 
@@ -131,6 +143,11 @@ html {
   /* Nav items, card titles */
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.usp .heading-4 {
+  color: var(--light-cream);
+  text-align: center;
 }
 
 /* --Paragraphs */
@@ -151,13 +168,15 @@ html {
   }
 }
 
-.hero .paragraph-1 {
-  /* ----Regular paragraph - Hero */
+.hero .paragraph-1,
+.usps .paragraph-1 {
+  /* ----Regular paragraph - Hero, regular paragraph - Usps */
   color: var(--light-cream);
 }
 
-.card .paragraph-1 {
-  /* ----Regular paragraph - Card */
+.card .paragraph-1,
+.usps .paragraph-1 {
+  /* ----Regular paragraph - Card, regular paragraph - Usps */
   text-align: center;
 }
 
