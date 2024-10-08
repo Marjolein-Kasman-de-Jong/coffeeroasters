@@ -156,3 +156,57 @@
 
 /* Business process step cards */
 
+.card.step {
+    width: 100%;
+    max-width: 327px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .card.step {
+        max-width: 223px;
+        gap: 42px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .card.step {
+        max-width: 285px;
+        margin: 0;
+        flex-direction: column;
+    }
+}
+
+.card.step div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .card.step div {
+        align-items: flex-start;
+        gap: 38px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .card.step div {
+        gap: 42px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card.step .text-wrapper .heading-4 {
+        max-width: 175px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .card.step .text-wrapper .heading-4 {
+        height: unset;
+    }
+}

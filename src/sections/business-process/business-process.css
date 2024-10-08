@@ -25,17 +25,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 56px;
 }
 
 @media screen and (min-width: 768px) {
     .business-process .cards-wrapper {
         margin-top: 48px;
         flex-direction: row;
+        align-items: unset;
+        gap: 10px;
     }
 }
 
 @media screen and (min-width: 1440px) {
     .business-process .cards-wrapper {
         margin-top: 80px;
+        gap: 95px;
     }
 }
