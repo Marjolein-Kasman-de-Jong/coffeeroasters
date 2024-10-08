@@ -210,3 +210,88 @@
         height: unset;
     }
 }
+
+/* Business process step cards animation */
+
+@media screen and (min-width: 768px) {
+    .card.step {
+        position: relative;
+        padding-top: 2px;
+    }
+
+    .card.step::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: var(--pale-orange);
+        transition: width 2s ease-in-out;
+    }
+
+    .card.step:nth-child(1)::before {
+        animation: borderWidth1 6s forwards;
+        animation-iteration-count: infinite;
+    }
+    
+    .card.step:nth-child(2)::before {
+        animation: borderWidth2 6s forwards;
+        animation-iteration-count: infinite;
+    }
+    
+    .card.step:nth-child(3)::before {
+        animation: borderWidth3 6s forwards;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes borderWidth1 {
+        0% {
+            width: 0
+        }
+
+        33% {
+            width: 100%;
+        }
+
+        100% {
+            width: 100%;
+        }
+    }
+
+    @keyframes borderWidth2 {
+        0% {
+            width: 0
+        }
+
+        33% {
+            width: 0;
+        }
+
+        66% {
+            width: 100%;
+        }
+
+        100% {
+            width: 100%;
+        }
+    }
+
+    @keyframes borderWidth3 {
+        0% {
+            width: 0
+        }
+
+        33% {
+            width: 0;
+        }
+
+        66% {
+            width: 0;
+        }
+
+        100% {
+            width: 100%;
+        }
+    }
+}

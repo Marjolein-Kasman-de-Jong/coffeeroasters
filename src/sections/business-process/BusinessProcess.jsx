@@ -14,12 +14,12 @@ export default function BusinessProcess() {
         How it works
       </h2>
       <div className="cards-wrapper">
-      {
+        {
           sectionBusinessProcessContent.map((item) => {
-            return <Card 
-              key={item.title} 
-              type="step" 
-              item={item} 
+            return <Card
+              key={item.title}
+              type="step"
+              item={item}
             />
           })
         }
