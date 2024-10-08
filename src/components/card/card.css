@@ -162,20 +162,23 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    position: relative;
 }
 
 @media screen and (min-width: 768px) {
     .card.step {
-        max-width: 223px;
+        max-width: unset;
+        padding: 62px 10px 0 0;
         gap: 42px;
     }
 }
 
 @media screen and (min-width: 1440px) {
     .card.step {
-        max-width: 285px;
         margin: 0;
+        padding: 82px 95px 0 0;
         flex-direction: column;
+        gap: 38px;
     }
 }
 
@@ -211,12 +214,30 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    .dot {
+        width: 31px;
+        height: 31px;
+        border: 2px solid var(--dark-cyan);
+        border-radius: 50%;
+        background-color: var(--light-cream);
+        position: absolute;
+        transform: translate(0, -77.5px);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .dot {
+        transform: translate(0, -97.5px);
+    }
+}
+
 /* Business process step cards animation */
 
 @media screen and (min-width: 768px) {
     .card.step {
         position: relative;
-        padding-top: 2px;
+        /* padding-top: 2px; */
     }
 
     .card.step::before {
@@ -240,11 +261,6 @@
         animation-iteration-count: infinite;
     }
     
-    .card.step:nth-child(3)::before {
-        animation: borderWidth3 6s forwards;
-        animation-iteration-count: infinite;
-    }
-
     @keyframes borderWidth1 {
         0% {
             width: 0

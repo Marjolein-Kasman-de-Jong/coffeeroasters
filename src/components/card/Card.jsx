@@ -46,6 +46,9 @@ export default function Card({ type, item }) {
             className={`card ${type} ${isIntersecting ? 'show' : ''}`}
         >
             {
+                type === "step" && <div className="dot"></div>
+            }
+            {
                 image ?
                 <img
                     src={image}

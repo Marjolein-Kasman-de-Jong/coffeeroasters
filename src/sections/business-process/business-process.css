@@ -14,9 +14,9 @@
 
 @media screen and (min-width: 1440px) {
     .business-process {
-        width: 72.57%;
+        width: 81.96%;
         max-width: 1045px;
-        margin: 200px 0 0 165px;
+        margin-top: 200px;
     }
 }
 
@@ -33,13 +33,13 @@
         margin-top: 48px;
         flex-direction: row;
         align-items: unset;
-        gap: 10px;
+        gap: unset;
     }
 }
 
 @media screen and (min-width: 1440px) {
     .business-process .cards-wrapper {
         margin-top: 80px;
-        gap: 95px;
+        gap: unset;
     }
 }
