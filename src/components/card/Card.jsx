@@ -38,17 +38,24 @@ export default function Card({ type, item }) {
         threshold: threshold,
     });
 
-    const { title, description, image } = item;
+    const { title, description, image, number } = item;
 
     return (
         <article
             ref={ref}
             className={`card ${type} ${isIntersecting ? 'show' : ''}`}
         >
-            <img
-                src={image}
-                alt={title}
-            />
+            {
+                image ?
+                <img
+                    src={image}
+                    alt={title}
+                />
+                :
+                <p className="paragraph-3">
+                    {number}
+                </p>   
+            }
             <div className="text-wrapper">
                 <h3 className="heading-4">
                     {title}

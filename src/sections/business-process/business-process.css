@@ -1,0 +1,41 @@
+.business-process {
+    width: 87.2%;
+    max-width: 327px;
+    margin: 670px auto 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .business-process {
+        width: 89.71%;
+        max-width: unset;
+        margin: 285px auto 0 auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .business-process {
+        width: 72.57%;
+        max-width: 1045px;
+        margin: 200px 0 0 165px;
+    }
+}
+
+.business-process .cards-wrapper {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .business-process .cards-wrapper {
+        margin-top: 48px;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .business-process .cards-wrapper {
+        margin-top: 80px;
+    }
+}

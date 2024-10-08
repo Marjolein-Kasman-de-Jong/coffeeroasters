@@ -150,6 +150,21 @@ html {
   text-align: center;
 }
 
+.business-process .heading-4 {
+  color: var(--grey);
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .business-process .heading-4 {
+    text-align: left;
+  }
+}
+
+.business-process .step .heading-4 {
+  color: var(--dark-grey-blue);
+}
+
 /* --Paragraphs */
 
 .paragraph-1 {
@@ -192,6 +207,12 @@ html {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .step .paragraph-1 {
+    text-align: left;
+  }
+}
+
 .paragraph-2 {
   /* ----Nav items */
   color: var(--grey);
@@ -208,6 +229,22 @@ html {
 .paragraph-2:hover {
   cursor: pointer;
   color: var(--dark-grey-blue);
+}
+
+.paragraph-3 {
+  /* ----Business process card numbers */
+  color: var(--pale-orange);
+  font-family: "Fraunces";
+  font-size: 4.5rem;
+  font-weight: 900;
+  line-height: 4.5rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .paragraph-3 {
+    text-align: left;
+  }
 }
 
 /* --Links */
