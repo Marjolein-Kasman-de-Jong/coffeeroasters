@@ -1,6 +1,36 @@
+/* ------------------------------
+1. Slide up animation
+2. Card
+    2.1 Text wrapper
+3. Product card
+    3.1 Product card image
+    3.2 Product card text wrapper
+4. Usp card
+    4.1 Usp card image
+    4.2 Usp card text wrapper
+5. Business process card
+    5.1 Business process card image
+    5.2 Business process card text wrapper
+    5.3 Business process card animation
+------------------------------ */
+
+/* 1. Slide up animation */
+
 .card {
     transform: translateY(100px);
-    transition: all .5s ease-in-out;
+    transition: transform .5s ease-in-out;
+}
+
+.card.show {
+    transform: translateY(0);
+}
+
+/* 2. Card */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -9,18 +39,37 @@
     }
 }
 
-.card.show {
-    transform: translateY(0);
+@media screen and (min-width: 1440px) {
+    .card {
+        flex-direction: column;
+    }
 }
 
-/* Product cards */
+/* 2.1 Text-wrapper */
+
+.card div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .card div {
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .card div {
+        align-items: center;
+    }
+}
+
+/* 3. Product card */
 
 .card.product {
     width: 75.2%;
     max-width: 282px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 24px;
 }
 
@@ -28,7 +77,6 @@
     .card.product {
         width: 74.61%;
         max-width: unset;
-        flex-direction: row;
         gap: 36px;
     }
 }
@@ -37,10 +85,11 @@
     .card.product {
         width: 17.71%;
         max-width: 255px;
-        flex-direction: column;
         gap: 72px;
     }
 }
+
+/* 3.1 Product card image */
 
 .card.product img {
     width: 71.02%;
@@ -50,7 +99,6 @@
 @media screen and (min-width: 768px) {
     .card.product img {
         width: 44.5%;
-        max-width: 234.82px;
     }
 }
 
@@ -61,36 +109,25 @@
     }
 }
 
+/* 3.2 Product card text wrapper */
+
 .card.product div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 16px;
 }
 
 @media screen and (min-width: 768px) {
     .card.product div {
-        align-items: flex-start;
         gap: 24px;
     }
 }
 
-@media screen and (min-width: 1440px) {
-    .card.product div {
-        align-items: center;
-    }
-}
-
-/* Usp cards */
+/* 4. Usp card */
 
 .card.usp {
     width: 100%;
     max-width: 279px;
     margin: 0 auto;
     padding: 72px 34px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 56px;
     border-radius: 8px;
     background: var(--dark-cyan);
@@ -115,6 +152,8 @@
     }
 }
 
+/* 4.1 Usp card image */
+
 .card.usp img {
     width: 34.12%;
     max-width: 72px;
@@ -133,34 +172,29 @@
     }
 }
 
+/* 4.2 Usp card text wrapper */
+
 .card.usp div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 24px;
 }
 
 @media screen and (min-width: 768px) {
     .card.usp div {
-        align-items: flex-start;
         gap: 16px;
     }
 }
 
 @media screen and (min-width: 1440px) {
     .card.usp div {
-        align-items: center;
         gap: 24px;
     }
 }
 
-/* Business process step cards */
+/* 5. Business process card */
 
 .card.step {
     width: 100%;
     max-width: 327px;
-    display: flex;
-    flex-direction: column;
     gap: 24px;
     position: relative;
 }
@@ -169,6 +203,8 @@
     .card.step {
         max-width: unset;
         padding: 62px 10px 0 0;
+        flex-direction: column;
+        align-items: flex-start;
         gap: 42px;
     }
 }
@@ -177,27 +213,45 @@
     .card.step {
         margin: 0;
         padding: 82px 95px 0 0;
-        flex-direction: column;
         gap: 38px;
     }
 }
 
+/* 5.1 Business process card image */
+
+@media screen and (min-width: 768px) {
+    .dot {
+        width: 31px;
+        height: 31px;
+        position: absolute;
+        transform: translate(0, -77.5px);
+        border: 2px solid var(--dark-cyan);
+        border-radius: 50%;
+        background-color: var(--light-cream);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .dot {
+        transform: translate(0, -97.5px);
+    }
+}
+
+/* 5.2 Business process card text wrapper */
+
 .card.step div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 24px;
 }
 
 @media screen and (min-width: 768px) {
     .card.step div {
-        align-items: flex-start;
         gap: 38px;
     }
 }
 
 @media screen and (min-width: 1440px) {
     .card.step div {
+        align-items: flex-start;
         gap: 42px;
     }
 }
@@ -208,38 +262,9 @@
     }
 }
 
-@media screen and (min-width: 1440px) {
-    .card.step .text-wrapper .heading-4 {
-        height: unset;
-    }
-}
+/* 5.3 Business process card animation */
 
 @media screen and (min-width: 768px) {
-    .dot {
-        width: 31px;
-        height: 31px;
-        border: 2px solid var(--dark-cyan);
-        border-radius: 50%;
-        background-color: var(--light-cream);
-        position: absolute;
-        transform: translate(0, -77.5px);
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .dot {
-        transform: translate(0, -97.5px);
-    }
-}
-
-/* Business process step cards animation */
-
-@media screen and (min-width: 768px) {
-    .card.step {
-        position: relative;
-        /* padding-top: 2px; */
-    }
-
     .card.step::before {
         content: "";
         position: absolute;
@@ -247,20 +272,18 @@
         left: 0;
         width: 0;
         height: 2px;
-        background-color: var(--pale-orange);
+        background: var(--pale-orange);
         transition: width 2s ease-in-out;
     }
 
     .card.step:nth-child(1)::before {
-        animation: borderWidth1 6s forwards;
-        animation-iteration-count: infinite;
+        animation: borderWidth1 6s infinite forwards;
     }
-    
+
     .card.step:nth-child(2)::before {
-        animation: borderWidth2 6s forwards;
-        animation-iteration-count: infinite;
+        animation: borderWidth2 6s infinite forwards;
     }
-    
+
     @keyframes borderWidth1 {
         0% {
             width: 0
@@ -286,24 +309,6 @@
 
         66% {
             width: 100%;
-        }
-
-        100% {
-            width: 100%;
-        }
-    }
-
-    @keyframes borderWidth3 {
-        0% {
-            width: 0
-        }
-
-        33% {
-            width: 0;
-        }
-
-        66% {
-            width: 0;
         }
 
         100% {
