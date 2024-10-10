@@ -1,0 +1,68 @@
+/* ------------------------------
+1. Commitment section
+2. Commitment article
+    2.1 Image
+    2.2 Text wrapper
+    2.3 Paragraph
+------------------------------ */
+
+/* 1. Commitment section */
+
+.commitment {
+    width: 87.2%;
+    max-width: 327px;
+    margin: 120px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+@media screen and (min-width: 768px) {
+    .commitment {
+        width: 89.58%;
+        max-width: 688px;
+        margin: 144px auto 0 auto;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: unset;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .commitment {
+        width: 77.08%;
+        max-width: 1110px;
+        margin: 168px auto 0 auto;
+    }
+}
+
+/* 2. Commitment article */
+
+/* 2.1 Image */
+
+.commitment img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+/* 2.2 Text wrapper */
+
+.commitment .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .commitment .text-wrapper {
+        width: 49.27%;
+        justify-content: center;
+    }
+}
+
+/* 2.3 Paragraph */
+
+.commitment p {
+    opacity: .8;
+}

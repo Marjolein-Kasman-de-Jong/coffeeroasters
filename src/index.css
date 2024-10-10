@@ -118,7 +118,7 @@ html {
 }
 
 .heading-3 {
-  /* Our collection section title */
+  /* ----Our collection section title */
   color: var(--grey);
   text-align: center;
   font-size: 2.5rem;
@@ -140,7 +140,7 @@ html {
 }
 
 .heading-4 {
-  /* Nav items, card titles */
+  /* ----Nav items, card titles */
   font-size: 1.5rem;
   line-height: 2rem;
 }
@@ -163,6 +163,26 @@ html {
 
 .business-process .step .heading-4 {
   color: var(--dark-grey-blue);
+}
+
+.heading-5 {
+  /* ----Our commitment title */
+  color: var(--dark-grey-blue);
+  text-align: center;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .heading-5 {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .heading-5 {
+    font-size: 2.5rem;
+  }
 }
 
 /* --Paragraphs */
@@ -190,13 +210,15 @@ html {
 }
 
 .card .paragraph-1,
-.usps .paragraph-1 {
-  /* ----Regular paragraph - Card, regular paragraph - Usps */
+.usps .paragraph-1,
+.commitment .paragraph-1 {
+  /* ----Regular paragraph - Card, regular paragraph - Usps, regular paragraph - Commitment */
   text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-  .card .paragraph-1 {
+  .card .paragraph-1,
+  .commitment .paragraph-1 {
     text-align: left;
   }
 }
