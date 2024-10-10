@@ -1,7 +1,18 @@
+/* ------------------------------
+1. Business process section
+2. Business process cards wrapper
+3. Business process button
+------------------------------ */
+
+/* 1. Business process section */
+
 .business-process {
     width: 87.2%;
     max-width: 327px;
     margin: 670px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -9,6 +20,7 @@
         width: 89.71%;
         max-width: unset;
         margin: 285px auto 0 auto;
+        display: unset;
     }
 }
 
@@ -19,6 +31,8 @@
         margin-top: 200px;
     }
 }
+
+/* 2. Business process cards wrapper */
 
 .business-process .cards-wrapper {
     margin-top: 80px;
@@ -40,6 +54,23 @@
 @media screen and (min-width: 1440px) {
     .business-process .cards-wrapper {
         margin-top: 80px;
-        gap: unset;
+    }
+}
+
+/* 3. Business process button */
+
+.business-process button {
+    margin-top: 79px;
+}
+
+@media screen and (min-width: 768px) {
+    .business-process button {
+        margin-top: 44px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .business-process button {
+        margin-top: 64px;
     }
 }

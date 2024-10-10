@@ -1,5 +1,6 @@
 // Components
 import Card from "../../components/card/Card";
+import Button from "../../components/button/Button";
 
 // Constants
 import sectionBusinessProcessContent from "../../constants/sectionBusinessProcessContent";
@@ -24,6 +25,9 @@ export default function BusinessProcess() {
           })
         }
       </div>
+      <Button>
+          Create your plan
+      </Button>
     </section>
   )
 }
