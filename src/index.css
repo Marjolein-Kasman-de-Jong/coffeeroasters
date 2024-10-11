@@ -69,20 +69,22 @@ html {
 }
 
 /* 
-   ----Hero | Home page
-   ----Hero | Subscribe page
+   ----Section | Hero | Home page
+   ----Section | Hero | Subscribe page
 */
 
 .heading-hero-large {
   color: var(--light-cream);
   font-size: 2.5rem;
   line-height: 2.5rem;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
   .heading-hero-large {
     font-size: 3rem;
     line-height: 3rem;
+    text-align: left;
   }
 }
 
@@ -93,17 +95,19 @@ html {
   }
 }
 
-/* ----Hero | About page */
+/* ----Section | Hero | About page */
 .heading-hero-small {
   color: var(--light-cream);
   font-size: 1.75rem;
   line-height: 1.75rem;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
   .heading-hero-small {
     font-size: 2rem;
     line-height: 2.5rem;
+    text-align: left;
   }
 }
 
@@ -214,19 +218,170 @@ html {
 @media screen and (min-width: 1440px) {
   .heading-section-quality {
     font-size: 2.5rem;
-    line-height: 3rem;
     text-align: left;
+  }
+}
+
+/* ----Card */
+
+.heading-card {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .heading-card {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .heading-card {
+    text-align: center;
   }
 }
 
 /* ----Card | Collection */
 
+.collection .heading-card,
+.business-process .heading-card {
+  color: var(--dark-grey-blue);
+}
 
+/* ----Card | Usps */
 
+.usps .heading-card {
+  color: var(--light-cream);
 
+}
 
+/* ----Card | Business process */
 
-/* ----Nav item | Header */
+.business-process .heading-card {
+  color: var(--dark-grey-blue);
+}
+
+@media screen and (min-width: 1440px) {
+  .business-process .heading-card {
+    text-align: left;
+  }
+}
+
+/* --Regular paragraphs */
+
+.regular-paragraph {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  color: var(--dark-grey-blue);
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  text-align: center;
+  opacity: .8;
+}
+
+@media screen and (min-width: 768px) {
+  .regular-paragraph {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .regular-paragraph {
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+}
+
+/* ----Section | Hero */
+
+.hero .regular-paragraph {
+  color: var(--light-cream);
+}
+
+/* ----Section | Usps */
+
+.usps .regular-paragraph {
+  color: var(--light-cream);
+}
+
+@media screen and (min-width: 768px) {
+  .usps .regular-paragraph {
+    text-align: center;
+  }
+}
+
+/* ------Section | Quality */
+
+.quality .regular-paragraph {
+  color: var(--light-cream);
+}
+
+@media screen and (min-width: 768px) {
+  .quality .regular-paragraph {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .quality .regular-paragraph {
+    text-align: left;
+  }
+}
+
+/* ----Card */
+
+.card .regular-paragraph  {
+  opacity: 1;
+}
+
+/* ----Card | Collection */
+
+@media screen and (min-width: 1440px) {
+  .collection .card .regular-paragraph {
+    text-align: center;
+  }
+}
+
+/* ----Card | Usps */
+
+.usps .card .regular-paragraph {
+  color: var(--light-cream);
+}
+
+@media screen and (min-width: 768px) {
+  .usps .card .regular-paragraph {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .usps .card .regular-paragraph {
+    text-align: center;
+  }
+}
+
+/* --Numbers */
+
+.number {
+  font-family: "Fraunces";
+  font-weight: 900;
+  color: var(--pale-orange);
+  font-size: 4.5rem;
+  line-height: 4.5rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .number {
+    text-align: left;
+  }
+}
+
+/* --Nav items */
+
+/* ----Header */
 
 .nav-item-header {
   font-family: "Fraunces";
@@ -258,110 +413,16 @@ html {
   }
 }
 
+/* --Buttons */
 
-
-
-
-
-
-
-.heading-4 {
-  /* 
-    Card title - Collection
-    Card-title - Business process
-  */
-  color: var(--dark-grey-blue);
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.usp .heading-4 {
-  /* 
-    Card title - Usps
-  */
-  color: var(--light-cream);
-  text-align: center;
-}
-
-
-
-.business-process .step .heading-4 {
-  color: var(--dark-grey-blue);
-}
-
-
-
-/* --Paragraphs */
-
-.paragraph-1 {
-  /* ----Regular paragraph */
-  font-family: "Barlow";
-  font-size: 0.9375rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5625rem;
-}
-
-@media screen and (min-width: 1440px) {
-  .paragraph-1 {
-    font-size: 1rem;
-    line-height: 1.625rem;
-  }
-}
-
-.hero .paragraph-1,
-.usps .paragraph-1,
-.quality .paragraph-1 {
-  /* ----Regular paragraph - Hero, regular paragraph - Usps */
-  color: var(--light-cream);
-}
-
-.card .paragraph-1,
-.usps .paragraph-1,
-.commitment .paragraph-1,
-.quality .paragraph-1 {
-  /* ----Regular paragraph - Card, regular paragraph - Usps, regular paragraph - Commitment */
-  text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-
-  .card .paragraph-1,
-  .commitment .paragraph-1 {
-    text-align: left;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .card .paragraph-1 {
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-
-  .step .paragraph-1,
-  .quality .paragraph-1 {
-    text-align: left;
-  }
-}
-
-
-
-.paragraph-3 {
-  /* ----Business process card numbers */
-  color: var(--pale-orange);
+.button-1 {
   font-family: "Fraunces";
-  font-size: 4.5rem;
+  font-style: normal;
   font-weight: 900;
-  line-height: 4.5rem;
+  color: var(--light-cream);
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
   text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .paragraph-3 {
-    text-align: left;
-  }
 }
 
 /* --Links */
@@ -372,16 +433,4 @@ a:hover,
 a:active {
   text-decoration: none;
   color: inherit;
-}
-
-/* --Buttons */
-
-.button-1 {
-  /* color: var(--light-cream); */
-  text-align: center;
-  font-family: "Fraunces";
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 1.5625rem;
 }

@@ -34,13 +34,11 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    text-align: center;
 }
 
 @media screen and (min-width: 768px) {
     .hero article {
         max-width: 398px;
-        text-align: left;
     }
 }
 
@@ -48,8 +46,4 @@
     .hero article {
         max-width: 493px;
     }
-}
-
-.hero article p {
-    opacity: .8;
 }

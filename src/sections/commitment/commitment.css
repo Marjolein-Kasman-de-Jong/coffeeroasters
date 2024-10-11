@@ -3,7 +3,6 @@
 2. Commitment article
     2.1 Image
     2.2 Text wrapper
-    2.3 Paragraph
 ------------------------------ */
 
 /* 1. Commitment section */
@@ -59,10 +58,4 @@
         width: 49.27%;
         justify-content: center;
     }
-}
-
-/* 2.3 Paragraph */
-
-.commitment p {
-    opacity: .8;
 }

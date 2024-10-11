@@ -60,7 +60,7 @@ export default function Hero() {
         <h1 className={(location === "/" || location === "/subscribe") ? "heading-hero-large" : "heading-hero-small"}>
           {heading}
         </h1>
-        <p className="paragraph-1 light-cream">
+        <p className="regular-paragraph light-cream">
           {paragraph}
         </p>
       </article>

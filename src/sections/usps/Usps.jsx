@@ -14,7 +14,7 @@ export default function Usps() {
         <h2 className="heading-section-usps">
           Why choose us?
         </h2>
-        <p className="paragraph-1 light-cream">
+        <p className="regular-paragraph">
           A large part of our role is choosing which particular coffees will be featured  in our range. This means working closely with the best coffee growers to give you a more impactful experience on every level.
         </p>
       </article>

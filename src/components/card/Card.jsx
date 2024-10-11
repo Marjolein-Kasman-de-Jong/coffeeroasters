@@ -55,15 +55,15 @@ export default function Card({ type, item }) {
                     alt={title}
                 />
                 :
-                <p className="paragraph-3">
+                <p className="number">
                     {number}
                 </p>   
             }
             <div className="text-wrapper">
-                <h3 className="heading-4">
+                <h3 className="heading-card">
                     {title}
                 </h3>
-                <p className="paragraph-1">
+                <p className="regular-paragraph">
                     {description}
                 </p>
             </div>
