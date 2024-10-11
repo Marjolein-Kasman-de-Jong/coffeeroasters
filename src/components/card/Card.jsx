@@ -38,7 +38,14 @@ export default function Card({ type, item }) {
         threshold: threshold,
     });
 
-    const { title, description, image, number } = item;
+    // Destructure item
+    let title, description, street, city, zip, phone, image, number;
+
+    if (type === "headquarter") {
+        ({ title, description: { street, city, zip, phone }, image, number } = item);
+    } else {
+        ({ title, description, image, number } = item);
+    }
 
     return (
         <article
@@ -50,23 +57,33 @@ export default function Card({ type, item }) {
             }
             {
                 image ?
-                <img
-                    src={image}
-                    alt={title}
-                />
-                :
-                <p className="number">
-                    {number}
-                </p>   
+                    <img
+                        src={image}
+                        alt={title}
+                    />
+                    :
+                    <p className="number">
+                        {number}
+                    </p>
             }
             <div className="text-wrapper">
                 <h3 className="heading-card">
                     {title}
                 </h3>
-                <p className="regular-paragraph">
-                    {description}
-                </p>
-            </div>
-        </article>
+                {
+                    type === "headquarter" ?
+                        <address>
+                            {street}<br />
+                            {city}<br />
+                            {zip}<br />
+                            {phone}<br />
+                        </address>
+                        :
+                        <p className="regular-paragraph">
+                            {description}
+                        </p>
+                }
+            </div >
+        </article >
     )
 }

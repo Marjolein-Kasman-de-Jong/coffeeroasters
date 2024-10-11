@@ -12,6 +12,10 @@
     5.1 Business process card image
     5.2 Business process card text wrapper
     5.3 Business process card animation
+6. Headquarter card
+    6.1 Headquarter card image
+    6.2 Headquarter card text wrapper
+    6.3 Headquarter card text wrapper children
 ------------------------------ */
 
 /* 1. Slide up animation */
@@ -316,3 +320,68 @@
         }
     }
 }
+
+/* 6. Headquarter card */
+
+.card.headquarter {
+    width: 100%;
+    gap: 47px;
+}
+
+@media screen and (min-width: 768px) {
+    .card.headquarter {
+        width: 32.41%;
+        max-width: 223px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 48px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .card.headquarter {
+        width: 27.27%;
+        max-width: 285px;
+        gap: 24px;
+    }
+}
+
+/* 6.1 Headquarter card image */
+
+.card.headquarter img {
+    width: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .card.headquarter img {
+        height: 50px;
+    }
+}
+
+/* 6.2 Headquarter card text wrapper */
+
+.card.headquarter div {
+    width: 100%;
+    gap: 22px;
+}
+
+@media screen and (min-width: 768px) {
+    .card.headquarter div {
+        gap: 21px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .card.headquarter div {
+        gap: 24px;
+    }
+}
+
+/* 6.3 Headquarter card text wrapper children */
+
+@media screen and (min-width: 1440px) {
+    .card.headquarter div > * {
+        width: 100%;
+    }
+}
+

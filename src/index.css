@@ -18,6 +18,10 @@ img {
   display: block;
 }
 
+address {
+  font-style: normal;
+}
+
 /* Colors */
 
 :root {
@@ -222,6 +226,21 @@ html {
   }
 }
 
+/* ----Section | Headquarters */
+
+.heading-section-headquarters {
+  color: var(--grey);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .heading-section-headquarters {
+    text-align: left;
+  }
+}
+
 /* ----Card */
 
 .heading-card {
@@ -264,6 +283,27 @@ html {
 
 @media screen and (min-width: 1440px) {
   .business-process .heading-card {
+    text-align: left;
+  }
+}
+
+/* ----Card | Headquarters */
+
+.headquarters .heading-card {
+  color: var(--dark-grey-blue);
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .headquarters .heading-card {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .headquarters .heading-card {
+    font-size: 2rem;
     text-align: left;
   }
 }
@@ -359,6 +399,24 @@ html {
 @media screen and (min-width: 1440px) {
   .usps .card .regular-paragraph {
     text-align: center;
+  }
+}
+
+/* ----Card | Headquarters */
+
+.headquarters .card address {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  color: var(--dark-grey-blue);
+  font-size: 1rem;
+  line-height: 1.625rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .headquarters .card address {
+    text-align: left;
   }
 }
 

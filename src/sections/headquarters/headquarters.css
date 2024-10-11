@@ -1,0 +1,38 @@
+.headquarters {
+    width: 87.2%;
+    max-width: 327px;
+    margin: 551px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+@media screen and (min-width: 768px) {
+    .headquarters {
+        width: 89.58%;
+        max-width: 688px;
+        margin: 472px auto 0 auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .headquarters {
+        width: 72.57%;
+        max-width: 1045px;
+        margin: 256px auto 0 auto;
+    }
+}
+
+.headquarters .cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+@media screen and (min-width: 768px) {
+    .headquarters .cards-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: unset;
+    }
+}
