@@ -68,134 +68,228 @@ html {
   font-weight: 900;
 }
 
-.heading-1 {
-  /* ----Home/subscribe hero title */
+/* 
+   ----Hero | Home page
+   ----Hero | Subscribe page
+*/
+
+.heading-hero-large {
+  color: var(--light-cream);
   font-size: 2.5rem;
   line-height: 2.5rem;
-  color: var(--light-cream);
 }
 
 @media screen and (min-width: 768px) {
-  .heading-1 {
+  .heading-hero-large {
     font-size: 3rem;
     line-height: 3rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .heading-1 {
+  .heading-hero-large {
     font-size: 4.5rem;
     line-height: 4.5rem;
   }
 }
 
-.heading-2 {
-  /* ----About us hero title, usps section title, quality section title */
+/* ----Hero | About page */
+.heading-hero-small {
   color: var(--light-cream);
   font-size: 1.75rem;
   line-height: 1.75rem;
 }
 
-.usps .heading-2,
-.quality .heading-2 {
-  text-align: center;
-}
-
 @media screen and (min-width: 768px) {
-  .heading-2 {
+  .heading-hero-small {
     font-size: 2rem;
     line-height: 2.5rem;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .usps .heading-2,
-  .quality .heading-2 {
-    font-size: 2rem;
-    line-height: 3rem;
-  }
-}
-
 @media screen and (min-width: 1440px) {
-  .heading-2 {
+  .heading-hero-small {
     font-size: 2.5rem;
     line-height: 3rem;
   }
 }
 
-@media screen and (min-width: 1440px) {
-  .quality .heading-2 {
-    text-align: left;
-  }
-}
+/* ----Section | Collection */
 
-.heading-3 {
-  /* ----Our collection section title */
+.heading-section-collection {
   color: var(--grey);
-  text-align: center;
   font-size: 2.5rem;
   line-height: 4.5rem;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-  .heading-3 {
+  .heading-section-collection {
     font-size: 6rem;
     line-height: 6rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .heading-3 {
+  .heading-section-collection {
     font-size: 9.375rem;
     line-height: 9.375rem;
   }
 }
 
-.heading-4 {
-  /* ----Nav items, card titles */
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
+/* ----Section | Usps */
 
-.usp .heading-4 {
+.heading-section-usps {
   color: var(--light-cream);
-  text-align: center;
-}
-
-.business-process .heading-4 {
-  color: var(--grey);
+  font-size: 1.75rem;
+  line-height: 1.75rem;
   text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-  .business-process .heading-4 {
+  .heading-section-usps {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .heading-section-usps {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+
+/* ----Section | Business process */
+.heading-section-business-process {
+  color: var(--grey);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .heading-section-business-process {
     text-align: left;
   }
 }
 
-.business-process .step .heading-4 {
-  color: var(--dark-grey-blue);
-}
+/* ----Section | Commitment */
 
-.heading-5 {
-  /* ----Our commitment title */
+.heading-section-commitment {
   color: var(--dark-grey-blue);
-  text-align: center;
   font-size: 2rem;
   line-height: 3rem;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-  .heading-5 {
+  .heading-section-commitment {
     text-align: left;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .heading-5 {
+  .heading-section-commitment {
     font-size: 2.5rem;
   }
 }
+
+/* ----Section | Quality */
+
+.heading-section-quality {
+  color: var(--light-cream);
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .heading-section-quality {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .heading-section-quality {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-align: left;
+  }
+}
+
+/* ----Card | Collection */
+
+
+
+
+
+
+/* ----Nav item | Header */
+
+.nav-item-header {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  color: var(--dark-grey-blue);
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-item-header {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 700;
+    color: var(--grey);
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    letter-spacing: 0.05769rem;
+    text-transform: uppercase;
+    transition: all .3s;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .nav-item-header:hover {
+    cursor: pointer;
+    color: var(--dark-grey-blue);
+  }
+}
+
+
+
+
+
+
+
+
+.heading-4 {
+  /* 
+    Card title - Collection
+    Card-title - Business process
+  */
+  color: var(--dark-grey-blue);
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.usp .heading-4 {
+  /* 
+    Card title - Usps
+  */
+  color: var(--light-cream);
+  text-align: center;
+}
+
+
+
+.business-process .step .heading-4 {
+  color: var(--dark-grey-blue);
+}
+
+
 
 /* --Paragraphs */
 
@@ -231,6 +325,7 @@ html {
 }
 
 @media screen and (min-width: 768px) {
+
   .card .paragraph-1,
   .commitment .paragraph-1 {
     text-align: left;
@@ -244,29 +339,14 @@ html {
 }
 
 @media screen and (min-width: 1440px) {
+
   .step .paragraph-1,
   .quality .paragraph-1 {
     text-align: left;
   }
 }
 
-.paragraph-2 {
-  /* ----Nav items */
-  color: var(--grey);
-  font-family: "Barlow";
-  font-size: 0.75rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 0.9375rem;
-  letter-spacing: 0.05769rem;
-  text-transform: uppercase;
-  transition: all .3s;
-}
 
-.paragraph-2:hover {
-  cursor: pointer;
-  color: var(--dark-grey-blue);
-}
 
 .paragraph-3 {
   /* ----Business process card numbers */
@@ -297,7 +377,7 @@ a:active {
 /* --Buttons */
 
 .button-1 {
-  color: var(--light-cream);
+  /* color: var(--light-cream); */
   text-align: center;
   font-family: "Fraunces";
   font-size: 1.125rem;

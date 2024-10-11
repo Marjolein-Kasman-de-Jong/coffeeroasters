@@ -11,7 +11,7 @@ import "./business-process.css";
 export default function BusinessProcess() {
   return (
     <section className="business-process">
-      <h2 className="heading-4">
+      <h2 className="heading-section-business-process">
         How it works
       </h2>
       <div className="cards-wrapper">

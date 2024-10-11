@@ -11,10 +11,10 @@ export default function Quality() {
           <img src="/about/mobile/image-quality.jpg" alt="Cappucino" />
         </picture>
         <div className="text-wrapper">
-          <h2 className="heading-2">
+          <h2 className="heading-section-quality">
             Uncompromising quality
           </h2>
-          <p className="paragraph-1">
+          <p className="paragraph-1 light-cream">
             Although we work with grows who pay close attention to all stages of harvest and processing, we employ, on our end, a rigorous quality control program to avoid over-roasting or baking the coffee dry. Every bag of coffee is tagged with a roast date and batch number. Our goal is to roast consistent, user-friendly coffee, so that brewing is easy and enjoyable.
           </p>
         </div>

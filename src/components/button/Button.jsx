@@ -12,7 +12,7 @@ export default function Button({ children }) {
 
     return (
             <button 
-                className="button-1" 
+                className="button-1 light-cream" 
                 onClick={navigateToSubscribe}
             >
                 {children}

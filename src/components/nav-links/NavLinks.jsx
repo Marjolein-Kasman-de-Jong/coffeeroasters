@@ -17,7 +17,8 @@ export default function NavLinks({ isOpen, toggleIsOpen }) {
         <>
             {
                 <ul className={`nav-links ${isOpen || !isMobile ? "open" : ""}`}>
-                    <li className={isMobile ? "heading-4" : "paragraph-2"}>
+                    {/* <li className={isMobile ? "nav-item-header" : "paragraph-2 grey"}> */}
+                    <li className="nav-item-header">
                         <Link 
                             to="/" 
                             onClick={handleClick}
@@ -25,7 +26,8 @@ export default function NavLinks({ isOpen, toggleIsOpen }) {
                             Home
                         </Link>
                     </li>
-                    <li className={isMobile ? "heading-4" : "paragraph-2"}>
+                    {/* <li className={isMobile ? "nav-item-header" : "paragraph-2 grey"}> */}
+                    <li className="nav-item-header">
                         <Link 
                             to="/about-us" 
                             onClick={handleClick}
@@ -33,7 +35,8 @@ export default function NavLinks({ isOpen, toggleIsOpen }) {
                             About Us
                         </Link>
                     </li>
-                    <li className={isMobile ? "heading-4" : "paragraph-2"}>
+                    {/* <li className={isMobile ? "nav-item-header" : "paragraph-2 grey"}> */}
+                    <li className="nav-item-header">
                         <Link 
                             to="/subscribe" 
                             onClick={handleClick}

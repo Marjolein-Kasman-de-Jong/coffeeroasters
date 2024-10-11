@@ -12,7 +12,7 @@ export default function Commitment() {
         </picture>
       </article>
       <div className="text-wrapper">
-        <h2 className="heading-5">
+        <h2 className="heading-section-commitment">
           Our commitment
         </h2>
         <p className="paragraph-1">
