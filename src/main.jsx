@@ -4,6 +4,9 @@ import { createRoot } from "react-dom/client";
 // Routing
 import { BrowserRouter as Router } from "react-router-dom";
 
+// Context
+import OrderContextProvider from "./context/OrderContextProvider.jsx";
+
 // Components
 import App from "./App.jsx";
 
@@ -12,8 +15,10 @@ import "./index.css";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Router>
-      <App />
-    </Router>
+    <OrderContextProvider>
+      <Router>
+        <App />
+      </Router>
+    </OrderContextProvider>
   </StrictMode>,
 )

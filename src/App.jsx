@@ -16,22 +16,22 @@ import "./App.css";
 function App() {
   return (
     <>
-      <PageHeader />
-      <Routes>
-        <Route
-          path="/"
-          element={<Home />}
-        />
-        <Route
-          path="/about-us"
-          element={<AboutUs />}
-        />
-        <Route
-          path="/subscribe"
-          element={<Subscribe />}
-        />
-      </Routes>
-      <PageFooter />
+        <PageHeader />
+        <Routes>
+          <Route
+            path="/"
+            element={<Home />}
+          />
+          <Route
+            path="/about-us"
+            element={<AboutUs />}
+          />
+          <Route
+            path="/subscribe"
+            element={<Subscribe />}
+          />
+        </Routes>
+        <PageFooter />
     </>
   )
 }
