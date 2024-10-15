@@ -20,12 +20,12 @@
 
 /* 1. Slide up animation */
 
-.card {
+.card.animate {
     transform: translateY(100px);
     transition: transform .5s ease-in-out;
 }
 
-.card.show {
+.card.show.animate {
     transform: translateY(0);
 }
 
@@ -206,7 +206,7 @@
 @media screen and (min-width: 768px) {
     .card.step {
         max-width: unset;
-        padding: 62px 10px 0 0;
+        padding: 62px 17px 0 0;
         flex-direction: column;
         align-items: flex-start;
         gap: 42px;
@@ -216,7 +216,7 @@
 @media screen and (min-width: 1440px) {
     .card.step {
         margin: 0;
-        padding: 82px 95px 0 0;
+        padding: 82px 65px 0 0;
         gap: 38px;
     }
 }
@@ -233,6 +233,10 @@
         border-radius: 50%;
         background-color: var(--light-cream);
     }
+
+    .subscribe .dot {
+        background-color: var(--very-dark-grey-blue);
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -243,25 +247,25 @@
 
 /* 5.2 Business process card text wrapper */
 
-.card.step div {
+.card.step .text-wrapper {
     gap: 24px;
 }
 
 @media screen and (min-width: 768px) {
-    .card.step div {
+    .card.step .text-wrapper {
         gap: 38px;
     }
 }
 
 @media screen and (min-width: 1440px) {
-    .card.step div {
+    .card.step .text-wrapper {
         align-items: flex-start;
         gap: 42px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .card.step .text-wrapper .heading-4 {
+    .card.step .text-wrapper .heading-card {
         max-width: 175px;
     }
 }

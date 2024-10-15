@@ -65,13 +65,13 @@
     top: 50%;
     z-index: -10;
     border-radius: 10px;
-    background: url(/public/about/mobile/bg-quality.png);
+    background: url(/about/mobile/bg-quality.png);
 }
 
 @media screen and (min-width: 768px) {
     .quality .text-wrapper {
         padding: 224px 74px 67px 74px;
-        background: url(/public/about/tablet/bg-quality.png);
+        background: url(/about/tablet/bg-quality.png);
     }
 }
 
@@ -80,6 +80,6 @@
         padding: 88px 51.17% 176px 85px;
         gap: 32px;
         top: 88px;
-        background: url(/public/about/desktop/bg-quality.png);
+        background: url(/about/desktop/bg-quality.png);
     }
 }

@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 // Hooks
 import useScreenWidth from "../../hooks/useScreenWidth";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
+import useParentFlexDirection from "../../hooks/useParentFlexDirection";
 
 // Styles
 import "./card.css";
@@ -38,6 +39,9 @@ export default function Card({ type, item }) {
         threshold: threshold,
     });
 
+    // Set animation in containers with flex-direction: column only
+    const isColumn = useParentFlexDirection(ref);
+
     // Destructure item
     let title, description, street, city, zip, phone, image, number;
 
@@ -50,7 +54,7 @@ export default function Card({ type, item }) {
     return (
         <article
             ref={ref}
-            className={`card ${type} ${isIntersecting ? 'show' : ''}`}
+            className={`card ${type} ${isIntersecting ? 'show' : ''} ${isColumn ? 'animate' : ''}`}
         >
             {
                 type === "step" && <div className="dot"></div>

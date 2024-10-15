@@ -15,12 +15,27 @@
     align-items: center;
 }
 
+.subscribe .business-process {
+    width: 100%;
+    max-width: 375px;
+    margin: 120px auto 0 auto;
+    padding: 80px 24px;
+    border-radius: 10px;
+    background-color: var(--very-dark-grey-blue);
+}
+
 @media screen and (min-width: 768px) {
     .business-process {
         width: 89.71%;
         max-width: unset;
         margin: 285px auto 0 auto;
         display: unset;
+    }
+
+    .subscribe .business-process {
+        max-width: 768px;
+        margin: 144px auto 0 auto;
+        padding: 97px 40px 97px 40px;
     }
 }
 
@@ -29,6 +44,13 @@
         width: 81.96%;
         max-width: 1045px;
         margin-top: 200px;
+    }
+
+    .subscribe .business-process {
+        width: 100%;
+        max-width: 1280px;
+        margin-top: 168px;
+        padding: 100px 150px 100px 85px;
     }
 }
 
@@ -40,6 +62,10 @@
     flex-direction: column;
     align-items: center;
     gap: 56px;
+}
+
+.subscribe .business-process .cards-wrapper {
+    margin-top: 0;
 }
 
 @media screen and (min-width: 768px) {

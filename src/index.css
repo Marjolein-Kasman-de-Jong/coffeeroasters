@@ -281,6 +281,10 @@ html {
   color: var(--dark-grey-blue);
 }
 
+.subscribe .business-process .heading-card {
+  color: var(--light-cream);
+}
+
 @media screen and (min-width: 1440px) {
   .business-process .heading-card {
     text-align: left;
@@ -400,6 +404,13 @@ html {
   .usps .card .regular-paragraph {
     text-align: center;
   }
+}
+
+/* ----Card | Business process */
+
+.subscribe .business-process .card .regular-paragraph {
+  color: var(--light-cream);
+  opacity: .8;
 }
 
 /* ----Card | Headquarters */
