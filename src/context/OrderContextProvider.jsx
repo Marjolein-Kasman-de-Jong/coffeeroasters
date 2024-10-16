@@ -15,9 +15,9 @@ function OrderContextProvider({ children }) {
             blended: false
         },
         amount: {
-            250: true,
-            500: false,
-            1000: false
+            "250g": true,
+            "500g": false,
+            "1000g": false
         },
         grind: {
             wholebean: true,
@@ -31,13 +31,15 @@ function OrderContextProvider({ children }) {
         }
     });
 
+    console.log(order)
+
     const updateOrder = (category, selectedOption) => {
         // Set only the selected option to true, others to false
         setOrder(prevOrder => ({
             ...prevOrder,
             [category]: Object.keys(prevOrder[category]).reduce((acc, key) => ({
                 ...acc,
-                [key]: key === selectedOption 
+                [key]: key === selectedOption
                     ? true
                     : false
             }), {})
@@ -45,10 +47,7 @@ function OrderContextProvider({ children }) {
     }
 
     return (
-        <OrderContext.Provider value={{
-            order,
-            updateOrder
-        }}>
+        <OrderContext.Provider value={{ order, updateOrder }}>
             {children}
         </OrderContext.Provider>
     )

@@ -1,28 +1,35 @@
-import { useContext } from "react";
+// Components
+import OrderFormSection from "../../components/order-form-section/OrderFormSection";
 
-// Context
-import { OrderContext } from "../../context/OrderContextProvider";
+// Constants
+import sectionOrderFormContent from "../../constants/sectionOrderFormContent";
 
 // Styles
 import "./order-form.css";
 
 export default function OrderForm() {
-  const {order, updateOrder} = useContext(OrderContext);
-  console.log(order);
-
-const handleChange = (event) => {
-  const category = event.target.name;
-  const selectedOption = event.target.id;
-
-  updateOrder(category, selectedOption)
-}
 
   return (
-    <section className="order-form">
-      <form>
-        <input type="radio" id="capsule" name="sort" onChange={handleChange} />
-        <input type="radio" id="filter" name="sort" onChange={handleChange} />
-        <input type="radio" id="espresso" name="sort" onChange={handleChange} />
+    <section className="order">
+      <nav className="order-navigation">
+        Order navigation
+      </nav>
+      <form className="order-form" id="order-form">
+        <div className="order-form-sections-wrapper">
+          {
+            sectionOrderFormContent.map((item, index) => {
+              return (
+                <OrderFormSection key={index} item={item} />
+              )
+            })
+          }
+        </div>
+        <div className="order-form-summary">
+          Summary
+        </div>
+        <button>
+          Submit button
+        </button>
       </form>
     </section>
   )
