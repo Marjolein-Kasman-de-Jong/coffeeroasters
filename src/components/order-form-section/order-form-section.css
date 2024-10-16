@@ -1,0 +1,41 @@
+.order-form-section {
+    border: 1px solid red;
+    width: 100%;
+    max-width: 328px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .order-form-section {
+        max-width: 689px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .order-form-section {
+        max-width: 730px;
+        margin: unset;
+    }
+}
+
+.order-form-section fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .order-form-section fieldset {
+        flex-direction: row;
+        justify-content: center;
+        align-items: unset;
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .order-form-section fieldset {
+        gap: 23px;
+    }
+}
