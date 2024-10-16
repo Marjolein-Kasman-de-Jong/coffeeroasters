@@ -1,0 +1,42 @@
+.order-form-option {
+    width: 87.47%;
+    max-width: 328px;
+    padding: 24px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 8px;
+    background-color: var(--light-grey);
+}
+
+@media screen and (min-width: 768px) {
+    .order-form-option {
+        width: 32.41%;
+        max-width: 223px;
+        padding: 32px 25px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .order-form-option {
+        width: 100%;
+        max-width: 228px;
+        padding: 32px 28px;
+        transition: background-color .3s;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .order-form-option:hover {
+        cursor: pointer;
+        background-color: var(--pale-orange);
+    }
+}
+
+.order-form-option.selected {
+    background-color: var(--dark-cyan)
+}
+
+.order-form-option input {
+    display: none;
+}

@@ -10,16 +10,26 @@ export default function OrderFormSection({ item }) {
     return (
         <details className="order-form-section">
             <summary>
-                <h2>{title}</h2>
+                <h2>
+                    {title}
+                </h2>
             </summary>
-            <fieldset form="order-form" name={section}>
+            <fieldset 
+                form="order-form" 
+                name={section}
+            >
                 <legend>
                     {section}
                 </legend>
                 {
                     Object.keys(options).map((option, index) => {
                         return (
-                            <OrderFormOption key={index} section={section} options={options} option={option}/>
+                            <OrderFormOption 
+                                key={index} 
+                                section={section} 
+                                options={options} 
+                                option={option}
+                            />
                         )
                     })
                 }

@@ -31,8 +31,6 @@ function OrderContextProvider({ children }) {
         }
     });
 
-    console.log(order)
-
     const updateOrder = (category, selectedOption) => {
         // Set only the selected option to true, others to false
         setOrder(prevOrder => ({

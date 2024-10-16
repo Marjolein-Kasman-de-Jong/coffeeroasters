@@ -8,18 +8,23 @@ import sectionOrderFormContent from "../../constants/sectionOrderFormContent";
 import "./order-form.css";
 
 export default function OrderForm() {
-
   return (
     <section className="order">
       <nav className="order-navigation">
         Order navigation
       </nav>
-      <form className="order-form" id="order-form">
+      <form 
+        className="order-form" 
+        id="order-form"
+      >
         <div className="order-form-sections-wrapper">
           {
             sectionOrderFormContent.map((item, index) => {
               return (
-                <OrderFormSection key={index} item={item} />
+                <OrderFormSection 
+                  key={index} 
+                  item={item} 
+                />
               )
             })
           }

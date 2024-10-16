@@ -32,6 +32,7 @@ address {
   --pale-orange: #FDD6BA;
   --light-cream: #FEFCF7;
   --grey: #83888F;
+  --light-grey: #F4F1EB;
 }
 
 /* Body */
@@ -312,6 +313,19 @@ html {
   }
 }
 
+/* ----Order form options */
+
+.order-form-option .heading-option {
+  color: var(--dark-grey-blue);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  transition: color .3s;
+}
+
+.order-form-option.selected .heading-option {
+  color: var(--light-cream);
+}
+
 /* --Regular paragraphs */
 
 .regular-paragraph {
@@ -429,6 +443,21 @@ html {
   .headquarters .card address {
     text-align: left;
   }
+}
+
+/* ----Order form options */
+
+.order-form-option .regular-paragraph {
+  color: var(--dark-grey-blue);
+  font-size: 1rem;
+  line-height: 1.625rem;
+  text-align: left;
+  opacity: 1;
+  transition: color .3s;
+}
+
+.order-form-option.selected .regular-paragraph {
+  color: var(--light-cream);
 }
 
 /* --Numbers */
