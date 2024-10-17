@@ -1,21 +1,12 @@
+// Hooks
+import useScrollToSection from "../../hooks/useScrollToSection";
+
 // Styles
 import "./order-form-nav.css";
 
-function scrollToSection(id, offset) {
-    const element = document.getElementById(id);
-
-    if (element) {
-        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-        const offsetPosition = elementPosition - offset;
-
-        window.scrollTo({
-            top: offsetPosition,
-            behavior: "smooth"
-        })
-    }
-}
-
 export default function OrderFormNav() {
+    const scrollToSection = useScrollToSection();
+
     return (
         <nav className="order-form-nav">
             <ol>
