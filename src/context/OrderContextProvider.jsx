@@ -6,7 +6,7 @@ function OrderContextProvider({ children }) {
     const [order, setOrder] = useState({
         sort: {
             capsule: true,
-            filter: false,
+            sfilter: false,
             espresso: false
         },
         type: {
@@ -21,7 +21,7 @@ function OrderContextProvider({ children }) {
         },
         grind: {
             wholebean: true,
-            filter: false,
+            gfilter: false,
             cafetiere: false
         },
         interval: {

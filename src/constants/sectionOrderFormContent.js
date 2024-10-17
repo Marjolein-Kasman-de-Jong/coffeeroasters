@@ -7,7 +7,7 @@ const sectionOrderFormContent = [
                 optionTitle: "Capsule",
                 optionDescription: "Compatible with Nespresso systems and similar brewers"
             },
-            filter: {
+            sfilter: {
                 optionTitle: "Filter",
                 optionDescription: "For pour over or drip methods like Aeropress, Chemex, and V60"
             },
@@ -61,7 +61,7 @@ const sectionOrderFormContent = [
                 optionTitle: "Wholebean",
                 optionDescription: "Best choice if you cherish the full sensory experience"
             },
-            filter: {
+            gfilter: {
                 optionTitle: "Filter",
                 optionDescription: "For drip or pour-over coffee methods such as V60 or Aeropress"
             },
