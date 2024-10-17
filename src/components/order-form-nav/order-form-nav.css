@@ -9,6 +9,10 @@ ol li {
     padding: 24px 0 24px 0;
 }
 
+ol li:hover {
+    cursor: pointer;
+}
+
 ol li::before {
     content: "0" counter(list-counter);
     padding-right: 24px;
