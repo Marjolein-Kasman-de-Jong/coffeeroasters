@@ -1,6 +1,7 @@
 const sectionOrderFormContent = [
     {
         section: "sort",
+        menuItem: "Preferences",
         title: "How do you drink your coffee?",
         options: {
             capsule: {
@@ -19,6 +20,7 @@ const sectionOrderFormContent = [
     },
     {
         section: "type",
+        menuItem: "Bean Type",
         title: "What type of coffee?",
         options: {
             singleOrigin: {
@@ -37,6 +39,7 @@ const sectionOrderFormContent = [
     },
     {
         section: "amount",
+        menuItem: "Quantity",
         title: "How much would you like?",
         options: {
             "250g": {
@@ -55,6 +58,7 @@ const sectionOrderFormContent = [
     },
     {
         section: "grind",
+        menuItem: "Grind Option",
         title: "Want us to grind them?",
         options: {
             wholebean: {
@@ -73,6 +77,7 @@ const sectionOrderFormContent = [
     },
     {
         section: "interval",
+        menuItem: "Deliveries",
         title: "How often should we deliver?",
         options: {
             everyWeek: {

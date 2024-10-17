@@ -3,22 +3,3 @@ ol {
     counter-reset: list-counter;
     width: 255px;
 }
-
-ol li {
-    counter-increment: list-counter;
-    padding: 24px 0 24px 0;
-}
-
-ol li:hover {
-    cursor: pointer;
-}
-
-ol li::before {
-    content: "0" counter(list-counter);
-    padding-right: 24px;
-}
-
-.order-form-nav hr {
-    border: 1px solid var(--dark-grey-blue);
-    opacity: .25;
-}

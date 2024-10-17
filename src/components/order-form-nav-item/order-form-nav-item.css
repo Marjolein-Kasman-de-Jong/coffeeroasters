@@ -1,0 +1,18 @@
+.order-form-nav ol li {
+    counter-increment: list-counter;
+    padding: 24px 0 24px 0;
+}
+
+.order-form-nav ol li:hover {
+    cursor: pointer;
+}
+
+.order-form-nav ol li::before {
+    content: "0" counter(list-counter);
+    padding-right: 24px;
+}
+
+.order-form-nav hr {
+    border: 1px solid var(--dark-grey-blue);
+    opacity: .25;
+}
