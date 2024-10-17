@@ -15,6 +15,7 @@ export default function OrderFormSection({ item }) {
         <details 
             ref={detailsRef} 
             className={`order-form-section ${isOpen ? "open" : ""}`}
+            id={section}
         >
             <summary>
                 <h2 className="heading-section">

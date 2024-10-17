@@ -63,10 +63,3 @@
 .order-form-section legend {
     display: none;
 }
-
-
-
-
-details[open] {
-    display: block;
-}

@@ -533,6 +533,22 @@ html {
   }
 }
 
+/* ----Order form */
+.nav-item-order-form {
+  color: var(--dark-grey-blue);
+  font-family: "Fraunces";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 2rem;
+  opacity: .25;
+  transition: opacity .3s;
+}
+
+.nav-item-order-form:hover {
+  opacity: .6;
+}
+
 /* --Buttons */
 
 .button-1 {
