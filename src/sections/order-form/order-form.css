@@ -1,7 +1,17 @@
-fieldset {
-    border: none;
+.order-form-sections-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
 }
 
-legend {
-    display: none;
+@media screen and (min-width: 768px) {
+    .order-form-sections-wrapper {
+        gap: 100px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .order-form-sections-wrapper {
+        gap: 88px;
+    }
 }

@@ -1,18 +1,36 @@
-// Styles
-import "./order-form-section.css";
+// Hooks
+import useDetailsToggle from "../../hooks/useDetailsToggle";
 
 // Components
 import OrderFormOption from "../order-form-option/OrderFormOption";
 
+// Styles
+import "./order-form-section.css";
+
 export default function OrderFormSection({ item }) {
+    const { detailsRef, isOpen } = useDetailsToggle();
     const { section, title, options } = item;
-    
+
     return (
-        <details className="order-form-section">
+        <details 
+            ref={detailsRef} 
+            className={`order-form-section ${isOpen ? "open" : ""}`}
+        >
             <summary>
-                <h2>
+                <h2 className="heading-section">
                     {title}
                 </h2>
+                <svg 
+                    width="19" 
+                    height="13" 
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path 
+                        d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z" 
+                        fill="#0E8784" 
+                        fillRule="nonzero"
+                    />
+                </svg>
             </summary>
             <fieldset 
                 form="order-form" 
