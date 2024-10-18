@@ -33,6 +33,7 @@ address {
   --light-cream: #FEFCF7;
   --grey: #83888F;
   --light-grey: #F4F1EB;
+  --white: #FFF;
 }
 
 /* Body */
@@ -348,6 +349,18 @@ html {
   color: var(--light-cream);
 }
 
+/* ----Order form summary */
+
+.order-form-summary .heading-order-summary {
+  color: var(--white);
+  font-family: "Barlow";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  text-transform: uppercase;
+  opacity: 0.5037;
+}
+
 /* --Regular paragraphs */
 
 .regular-paragraph {
@@ -412,7 +425,7 @@ html {
 
 /* ----Card */
 
-.card .regular-paragraph  {
+.card .regular-paragraph {
   opacity: 1;
 }
 
@@ -547,6 +560,21 @@ html {
 
 .nav-item-order-form:hover {
   opacity: .6;
+}
+
+/* ----Order form summary */
+
+.order-form-summary-paragraph {
+  color: var(--white);
+  font-family: "Fraunces";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 2.5rem;
+}
+
+.order-form-summary-paragraph span {
+  color: var(--dark-cyan);
 }
 
 /* --Buttons */

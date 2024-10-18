@@ -1,0 +1,31 @@
+.order-form-summary {
+    width: 87.47%;
+    max-width: 328px;
+    margin: 120px auto 0 auto;
+    padding: 32px 24px;
+    background-color: var(--very-dark-grey-blue);
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .order-form-summary {
+        width: 100%;
+        max-width: 689px;
+        margin: 144px auto 0 auto;
+        padding: 27px 44px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .order-form-summary {
+        max-width: 730px;
+        margin: 88px 0 auto 0;
+        padding: 27px 64px;
+    }
+}
+
+.order-form-summary article {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}

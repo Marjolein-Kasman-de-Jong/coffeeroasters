@@ -22,11 +22,19 @@ export default function OrderFormSummary() {
     return (
         <section className="order-form-summary">
             <article>
-                <h2>Order Summary</h2>
-                <p>
-                    {
-                        `“I drink my coffee as ${sort}, with a ${type} type of bean. ${amount} ground ala ${grind}, sent to me ${interval}.”`
-                    }
+                <h2 className="heading-order-summary">Order Summary</h2>
+                <p className="order-form-summary-paragraph">
+                    {`“I drink my coffee as `}
+                    <span>{sort}</span>
+                    {`, with a `}
+                    <span>{type}</span>
+                    {` type of bean. `}
+                    <span>{amount}</span>
+                    {` ground ala `}
+                    <span>{grind}</span>
+                    {`, sent to me `}
+                    <span>{interval}</span>
+                    {`.”`}
                 </p>
             </article>
         </section>
