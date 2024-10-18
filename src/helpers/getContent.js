@@ -1,5 +1,5 @@
 // Constants
-import sectionOrderFormContent from "../../constants/sectionOrderFormContent";
+import sectionOrderFormContent from "../constants/sectionOrderFormContent";
 
 const getContent = (option, orderSummary) => {
     if (!orderSummary) return;

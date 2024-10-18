@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { OrderContext } from "../../context/OrderContextProvider";
 
 // Helpers
-import getContent from "../helpers/getContent";
+import getContent from "../../helpers/getContent";
 
 // Styles
 import "./order-form-summary.css";
@@ -24,9 +24,11 @@ export default function OrderFormSummary() {
             <article>
                 <h2>Order Summary</h2>
                 <p>
-                    {`“I drink my coffee as ${sort}, with a ${type} type of bean. ${amount} ground ala ${grind}, sent to me ${interval}.”`}
+                    {
+                        `“I drink my coffee as ${sort}, with a ${type} type of bean. ${amount} ground ala ${grind}, sent to me ${interval}.”`
+                    }
                 </p>
             </article>
         </section>
-    );
+    )
 }
