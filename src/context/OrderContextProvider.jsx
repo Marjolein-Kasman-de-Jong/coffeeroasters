@@ -44,8 +44,28 @@ function OrderContextProvider({ children }) {
         }))
     }
 
+    const getOrderSummary = () => {
+        const { amount, grind, interval, sort, type } = order;
+
+        // Find chosen option
+        const chosenOption = (object, value) => {
+            return Object.entries(object).find(([key, val]) => val === value)?.[0];
+        }
+
+        // Create object containing chosen options
+        const chosenOptions = {
+            chosenAmount: chosenOption(amount, true),
+            chosenGrind: chosenOption(grind, true),
+            chosenInterval: chosenOption(interval, true),
+            chosenSort: chosenOption(sort, true),
+            chosenType: chosenOption(type, true)
+        }
+
+        return chosenOptions;
+    }
+
     return (
-        <OrderContext.Provider value={{ order, updateOrder }}>
+        <OrderContext.Provider value={{ order, updateOrder, getOrderSummary }}>
             {children}
         </OrderContext.Provider>
     )

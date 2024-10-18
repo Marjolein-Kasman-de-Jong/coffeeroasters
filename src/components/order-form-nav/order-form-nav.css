@@ -1,4 +1,14 @@
-ol {
+.order-form-nav {
+    display: none;
+}
+
+@media screen and (min-width: 1440px) {
+    .order-form-nav {
+        display: block;
+    }
+}
+
+.order-form-nav ol {
     list-style: none;
     counter-reset: list-counter;
     width: 255px;

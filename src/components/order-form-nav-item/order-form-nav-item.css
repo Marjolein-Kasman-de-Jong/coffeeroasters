@@ -3,6 +3,10 @@
     padding: 24px 0 24px 0;
 }
 
+.order-form-nav ol li:first-child {
+    padding: 0 0 24px 0;
+}
+
 .order-form-nav ol li:hover {
     cursor: pointer;
 }

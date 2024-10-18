@@ -1,5 +1,6 @@
 .order {
     margin-top: 112px;
+    position: relative; /*test*/
 }
 
 @media screen and (min-width: 768px) {
@@ -15,16 +16,6 @@
         margin: 168px auto 0 auto;
         display: flex;
         justify-content: space-between;
-    }
-}
-
-.order-navigation {
-    display: none;
-}
-
-@media screen and (min-width: 1440px) {
-    .order-navigation {
-        display: block;
     }
 }
 
