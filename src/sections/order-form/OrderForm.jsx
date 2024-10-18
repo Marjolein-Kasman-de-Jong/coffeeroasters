@@ -2,6 +2,8 @@
 import OrderFormNav from "../../components/order-form-nav/OrderFormNav";
 import OrderFormSection from "../../components/order-form-section/OrderFormSection";
 import OrderFormSummary from "../../components/order-form-summary/OrderFormSummary";
+import Button from "../../components/button/Button";
+
 
 // Constants
 import sectionOrderFormContent from "../../constants/sectionOrderFormContent";
@@ -30,9 +32,9 @@ export default function OrderForm() {
           }
         </div>
         <OrderFormSummary />
-        <button>
-          Submit button
-        </button>
+        <Button>
+          Create my plan!
+        </Button>
       </form>
     </section>
   )

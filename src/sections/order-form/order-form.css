@@ -1,6 +1,5 @@
 .order {
     margin-top: 112px;
-    position: relative; /*test*/
 }
 
 @media screen and (min-width: 768px) {
@@ -19,6 +18,11 @@
     }
 }
 
+.order-form {
+    display: flex;
+    flex-direction: column;
+}
+
 .order-form-sections-wrapper {
     display: flex;
     flex-direction: column;
@@ -35,5 +39,21 @@
     .order-form-sections-wrapper {
         width: 730px;
         gap: 88px;
+    }
+}
+
+.order-form button {
+    margin: 56px auto 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .order-form button {
+        margin: 40px auto 0 auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .order-form button {
+        margin: 40px 0 0 auto;
     }
 }

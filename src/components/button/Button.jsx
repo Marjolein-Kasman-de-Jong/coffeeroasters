@@ -10,10 +10,15 @@ export default function Button({ children }) {
         navigate("/subscribe");
     }
 
+    const createPlan = (event) => {
+        event.preventDefault();
+        console.log("Show modal");    
+    }
+
     return (
             <button 
                 className="button-1 light-cream" 
-                onClick={navigateToSubscribe}
+                onClick={children === "Create your plan" ? navigateToSubscribe : createPlan}
             >
                 {children}
             </button>
