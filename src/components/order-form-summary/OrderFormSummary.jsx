@@ -32,7 +32,7 @@ export default function OrderFormSummary() {
     return (
         <section className="order-form-summary">
             <article ref={articleRef}>
-            {!isInsideModal && (
+                {!isInsideModal && (
                     <h2 className="heading-order-summary">Order Summary</h2>
                 )}
                 <p className="order-form-summary-paragraph">
