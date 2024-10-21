@@ -21,6 +21,8 @@ export default function OrderFormSummary() {
     const grind = getContent("grind", orderSummary);
     const interval = getContent("interval", orderSummary);
 
+    console.log(sort)
+
     useEffect(() => {
         if (articleRef.current && articleRef.current.closest(".modal")) {
             setIsInsideModal(true);
@@ -36,8 +38,15 @@ export default function OrderFormSummary() {
                     <h2 className="heading-order-summary">Order Summary</h2>
                 )}
                 <p className="order-form-summary-paragraph">
-                    {`“I drink my coffee as `}
-                    <span>{sort}</span>
+                    {
+                        sort === "Capsule" ? "“I drink my coffee using " : "“I drink my coffee as "
+                    }
+                    <span>
+                        {sort}
+                        {
+                            sort === "Capsule" ? "s" : ""
+                        }
+                    </span>
                     {`, with a `}
                     <span>{type}</span>
                     {` type of bean. `}

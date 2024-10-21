@@ -25,14 +25,11 @@ export default function OrderFormSection({ item }) {
             ref={detailsRef}
             className={`order-form-section ${isOpen ? "open" : ""}`}
             id={section}
+            style={{
+                display: isDisabled ? "none" : "flex"
+            }}
         >
-            <summary
-                style={{
-                    opacity: isDisabled ? .25 : 'inherit',
-                    pointerEvents: isDisabled ? 'none' : 'auto',
-                    cursor: isDisabled ? 'not-allowed' : 'pointer'
-                }}
-            >
+            <summary>
                 <h2 className="heading-section">
                     {title}
                 </h2>
