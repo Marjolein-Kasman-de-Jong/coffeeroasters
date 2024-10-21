@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 // Styles
 import "./button.css";
 
-export default function Button({ children }) {
+export default function Button({ children, toggleIsOpen }) {
     const navigate = useNavigate();
 
     const navigateToSubscribe = () => {
@@ -12,7 +12,7 @@ export default function Button({ children }) {
 
     const createPlan = (event) => {
         event.preventDefault();
-        console.log("Show modal");    
+        toggleIsOpen(true);
     }
 
     return (

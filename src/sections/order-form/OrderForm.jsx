@@ -1,9 +1,11 @@
+import { useState } from "react";
+
 // Components
 import OrderFormNav from "../../components/order-form-nav/OrderFormNav";
 import OrderFormSection from "../../components/order-form-section/OrderFormSection";
 import OrderFormSummary from "../../components/order-form-summary/OrderFormSummary";
 import Button from "../../components/button/Button";
-
+import Modal from "../../components/modal/Modal";
 
 // Constants
 import sectionOrderFormContent from "../../constants/sectionOrderFormContent";
@@ -12,6 +14,9 @@ import sectionOrderFormContent from "../../constants/sectionOrderFormContent";
 import "./order-form.css";
 
 export default function OrderForm() {
+  const [isOpen, toggleIsOpen] = useState(false);
+  console.log(isOpen)
+
   return (
     <section className="order">
       <OrderFormNav />
@@ -32,10 +37,11 @@ export default function OrderForm() {
           }
         </div>
         <OrderFormSummary />
-        <Button>
+        <Button toggleIsOpen={toggleIsOpen}>
           Create my plan!
         </Button>
       </form>
+      <Modal isOpen={isOpen} toggleIsOpen={toggleIsOpen} />
     </section>
   )
 }
