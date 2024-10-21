@@ -15,7 +15,6 @@ import "./order-form-section.css";
 export default function OrderFormSection({ item }) {
     const { detailsRef, isOpen } = useDetailsToggle();
     const { section, title, options } = item;
-
     const { order } = useContext(OrderContext);
     const capsuleIsSelected = order["sort"]["capsule"];
     const isDisabled = section === "grind" && capsuleIsSelected === true;

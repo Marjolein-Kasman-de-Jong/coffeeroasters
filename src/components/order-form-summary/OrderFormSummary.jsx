@@ -21,8 +21,6 @@ export default function OrderFormSummary() {
     const grind = getContent("grind", orderSummary);
     const interval = getContent("interval", orderSummary);
 
-    console.log(sort)
-
     useEffect(() => {
         if (articleRef.current && articleRef.current.closest(".modal")) {
             setIsInsideModal(true);
