@@ -15,7 +15,6 @@ import "./order-form.css";
 
 export default function OrderForm() {
   const [isOpen, toggleIsOpen] = useState(false);
-  console.log(isOpen)
 
   return (
     <section className="order">

@@ -64,8 +64,73 @@ function OrderContextProvider({ children }) {
         return chosenOptions;
     }
 
+    const getPrice = () => {
+        const amount = Object.entries(order.amount).find(([key, value]) => value === true)[0];
+        const interval = Object.entries(order.interval).find(([key, value]) => value === true)[0];
+
+        let pricePerShipment;
+
+        if (amount === "250g") {
+            switch (interval) {
+                case 'everyWeek':
+                    pricePerShipment = 7.2;
+                    break;
+                case 'everyTwoWeeks':
+                    pricePerShipment = 9.6;
+                    break;
+                case 'everyMonth':
+                    pricePerShipment = 12;
+                    break;
+            }
+        }
+
+        if (amount === "500g") {
+            switch (interval) {
+                case 'everyWeek':
+                    pricePerShipment = 13;
+                    break;
+                case 'everyTwoWeeks':
+                    pricePerShipment = 17.5;
+                    break;
+                case 'everyMonth':
+                    pricePerShipment = 22;
+                    break;
+            }
+        }
+
+        if (amount === "1000g") {
+            switch (interval) {
+                case 'everyWeek':
+                    pricePerShipment = 22;
+                    break;
+                case 'everyTwoWeeks':
+                    pricePerShipment = 32;
+                    break;
+                case 'everyMonth':
+                    pricePerShipment = 42;
+                    break;
+            }
+        }
+
+        let multiplyer;
+
+        switch (interval) {
+            case 'everyWeek':
+                multiplyer = 4;
+                break;
+            case 'everyTwoWeeks':
+                multiplyer = 2;
+                break;
+            case 'everyMonth':
+                multiplyer = 1;
+                break;
+        }
+
+        return pricePerShipment * multiplyer;
+    }
+
     return (
-        <OrderContext.Provider value={{ order, updateOrder, getOrderSummary }}>
+        <OrderContext.Provider value={{ order, updateOrder, getOrderSummary, getPrice }}>
             {children}
         </OrderContext.Provider>
     )

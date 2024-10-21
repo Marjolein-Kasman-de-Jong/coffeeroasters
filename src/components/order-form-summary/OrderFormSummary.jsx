@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState, useRef } from "react";
 
 // Context
 import { OrderContext } from "../../context/OrderContextProvider";
@@ -12,6 +12,8 @@ import "./order-form-summary.css";
 export default function OrderFormSummary() {
     const { getOrderSummary } = useContext(OrderContext);
     const orderSummary = getOrderSummary();
+    const [isInsideModal, setIsInsideModal] = useState(false);
+    const articleRef = useRef(null);
 
     const sort = getContent("sort", orderSummary);
     const type = getContent("type", orderSummary);
@@ -19,10 +21,20 @@ export default function OrderFormSummary() {
     const grind = getContent("grind", orderSummary);
     const interval = getContent("interval", orderSummary);
 
+    useEffect(() => {
+        if (articleRef.current && articleRef.current.closest(".modal")) {
+            setIsInsideModal(true);
+        } else {
+            setIsInsideModal(false);
+        }
+    }, [])
+
     return (
         <section className="order-form-summary">
-            <article>
-                <h2 className="heading-order-summary">Order Summary</h2>
+            <article ref={articleRef}>
+            {!isInsideModal && (
+                    <h2 className="heading-order-summary">Order Summary</h2>
+                )}
                 <p className="order-form-summary-paragraph">
                     {`“I drink my coffee as `}
                     <span>{sort}</span>

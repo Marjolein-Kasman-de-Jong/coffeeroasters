@@ -15,12 +15,26 @@ export default function Button({ children, toggleIsOpen }) {
         toggleIsOpen(true);
     }
 
+    const closeModal = () => {
+        toggleIsOpen(false);
+    }
+
+    let onClick;
+
+    if (children === "Create your plan") {
+        onClick = navigateToSubscribe;
+    } else if (children === "Create my plan!") {
+        onClick = createPlan;
+    } else if (children === "Checkout" || children[0].startsWith("Checkout")) {
+        onClick = closeModal;
+    }
+
     return (
-            <button 
-                className="button-1 light-cream" 
-                onClick={children === "Create your plan" ? navigateToSubscribe : createPlan}
-            >
-                {children}
-            </button>
+        <button
+            className="button-1 light-cream"
+            onClick={onClick}
+        >
+            {children}
+        </button>
     )
 }

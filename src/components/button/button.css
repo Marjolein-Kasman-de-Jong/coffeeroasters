@@ -24,3 +24,10 @@ button {
 button:active {
     transform: scale(.98);
 }
+
+@media screen and (max-width: 375px) {
+    .modal button {
+        width: 279px;
+        margin: 24px;
+    }
+}

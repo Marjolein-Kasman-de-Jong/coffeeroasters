@@ -7,6 +7,8 @@
     border-radius: 10px;
 }
 
+
+
 @media screen and (min-width: 768px) {
     .order-form-summary {
         width: 100%;
@@ -21,6 +23,20 @@
         max-width: 730px;
         margin: 88px 0 auto 0;
         padding: 27px 64px;
+    }
+}
+
+.modal .order-form-summary {
+    width: 100%;
+    max-width: unset;
+    margin: 0 auto;
+    padding: 40px 24px 0 24px;
+    background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+    .modal .order-form-summary {
+        padding: 57px 56px 0 56px;
     }
 }
 

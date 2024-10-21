@@ -362,6 +362,19 @@ html {
   opacity: 0.5037;
 }
 
+.modal .heading-order-summary {
+  color: var(--white);
+  font-size: 1.75rem;
+  line-height: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .modal .heading-order-summary {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+
 /* --Regular paragraphs */
 
 .regular-paragraph {
@@ -574,8 +587,38 @@ html {
   line-height: 2.5rem;
 }
 
+.modal .order-form-summary-paragraph {
+  color: var(--grey);
+}
+
 .order-form-summary-paragraph span {
   color: var(--dark-cyan);
+}
+
+/* ----Modal paragraph */
+
+.modal .regular-paragraph {
+  padding: 0 24px;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .modal .regular-paragraph {
+    padding: 7px 56px 0 56px;
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+}
+
+/* Modal price */
+
+.modal .checkout p {
+  color: var(--dark-grey-blue);
+  font-family: "Fraunces";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 2.25rem;
 }
 
 /* --Buttons */

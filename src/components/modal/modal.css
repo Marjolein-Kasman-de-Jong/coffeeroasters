@@ -8,11 +8,33 @@
     z-index: 1000;
     border-radius: 8px;
     background-color: var(--light-cream);
+    overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+    .modal {
+        width: 70.3%;
+        max-width: 540px;
+    }
 }
 
 .modal header {
     padding: 28px 24px;
     background-color: var(--very-dark-grey-blue);
+}
+
+@media screen and (min-width: 768px) {
+    .modal header {
+        padding: 48px 0 40px 56px;
+    }
+}
+
+.modal .checkout {
+    margin: 47px auto 56px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
 }
 
 .overlay {
