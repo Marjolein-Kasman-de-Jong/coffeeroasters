@@ -5,9 +5,21 @@
     height: 18px;
 }
 
+.page-header .company-logo svg {
+    width: 100%;
+    height: auto;
+}
+
 @media screen and (min-width: 768px) {
     .page-header .company-logo {
         width: 236px;
         height: 26px;
     }
 }
+
+/* Page footer company logo */
+
+.page-footer .company-logo {
+    width: 218px;
+}
+
