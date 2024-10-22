@@ -2,7 +2,7 @@
 
 .page-header .company-logo {
     width: 163px;
-    height: 18px;
+    height: auto;
 }
 
 .page-header .company-logo svg {
@@ -13,7 +13,7 @@
 @media screen and (min-width: 768px) {
     .page-header .company-logo {
         width: 236px;
-        height: 26px;
+        height: auto;
     }
 }
 
@@ -23,3 +23,8 @@
     width: 218px;
 }
 
+@media screen and (min-width: 768px) {
+    .page-footer .company-logo {
+        width: 236px;
+    }
+}
