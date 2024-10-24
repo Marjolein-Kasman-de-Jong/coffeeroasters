@@ -6,9 +6,9 @@ export default function Commitment() {
     <section className="commitment">
       <article>
         <picture>
-          <source media="(min-width: 1440px)" srcSet="/about/desktop/image-commitment.jpg" />
-          <source media="(min-width: 768px)" srcSet="/about/tablet/image-commitment.jpg" />
-          <img src="/about/mobile/image-commitment.jpg" alt="Barista" />
+          <source media="(min-width: 1440px)" srcSet="./about/desktop/image-commitment.jpg" />
+          <source media="(min-width: 768px)" srcSet="./about/tablet/image-commitment.jpg" />
+          <img src="./about/mobile/image-commitment.jpg" alt="Barista" />
         </picture>
       </article>
       <div className="text-wrapper">
