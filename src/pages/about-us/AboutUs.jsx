@@ -4,10 +4,15 @@ import Commitment from "../../sections/commitment/Commitment";
 import Quality from "../../sections/quality/Quality";
 import Headquarters from "../../sections/headquarters/Headquarters";
 
+// Hooks
+import useScrollToTop from "../../hooks/useScrollToTop";
+
 // Styles
 import "./about-us.css";
 
 export default function AboutUs() {
+  useScrollToTop();
+  
   return (
     <main className="about-us">
       <Hero />
