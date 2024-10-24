@@ -1,0 +1,25 @@
+.social-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+@media screen and (min-width: 1440px) {
+    .social-links {
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .social-links svg:hover {
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .social-links svg:hover path {
+        fill: var(--pale-orange);
+    }    
+}
