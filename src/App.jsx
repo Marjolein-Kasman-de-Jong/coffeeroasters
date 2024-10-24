@@ -1,5 +1,6 @@
 // Routing
-import { Routes, Route } from "react-router-dom";
+// import { Routes, Route } from "react-router-dom";
+import { Switch, Route } from 'react-router-dom';
 
 // Pages
 import Home from "./pages/home/Home";
@@ -16,22 +17,24 @@ import "./App.css";
 function App() {
   return (
     <>
-        <PageHeader />
-        <Routes>
-          <Route
-            path="/"
-            element={<Home />}
-          />
-          <Route
-            path="/about-us"
-            element={<AboutUs />}
-          />
-          <Route
-            path="/subscribe"
-            element={<Subscribe />}
-          />
-        </Routes>
-        <PageFooter />
+      <PageHeader />
+      {/* <Routes> */}
+      <Switch>
+        <Route
+          path="/coffeeroasters/" exact
+          component={<Home />}
+        />
+        <Route
+          path="/coffeeroasters/about-us"
+          component={<AboutUs />}
+        />
+        <Route
+          path="/coffeeroasters/subscribe"
+          component={<Subscribe />}
+        />
+        {/* </Routes> */}
+      </Switch>
+      <PageFooter />
     </>
   )
 }
