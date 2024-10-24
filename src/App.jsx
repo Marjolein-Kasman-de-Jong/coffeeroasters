@@ -19,15 +19,15 @@ function App() {
         <PageHeader />
         <Routes>
           <Route
-            path="/"
+            path="/coffeeroasters/"
             element={<Home />}
           />
           <Route
-            path="/about-us"
+            path="/coffeeroasters/about-us"
             element={<AboutUs />}
           />
           <Route
-            path="/subscribe"
+            path="/coffeeroasters/subscribe"
             element={<Subscribe />}
           />
         </Routes>
