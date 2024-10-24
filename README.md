@@ -8,9 +8,9 @@ The challenge was to build out this subscription site and get it looking as clos
 
 * View the optimal layout for each page depending on their device's screen size
 * See hover states for all interactive elements throughout the site
-* Make selections to create a coffee subscription and see an order summary modal of their choices (details provided below)
+* Make selections to create a coffee subscription and see an order summary modal of their choices
 
-### Expected bahaviour
+### Expected behaviour
 
 The interactive subscription page has a number of specific behaviours, which are listed below:
 
