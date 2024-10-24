@@ -528,35 +528,40 @@ html {
 
 /* --Nav items */
 
-/* ----Header */
-
-.nav-item-header {
-  font-family: "Fraunces";
-  font-style: normal;
-  font-weight: 900;
-  color: var(--dark-grey-blue);
-  font-size: 1.5rem;
-  line-height: 2rem;
+@media screen and (max-width: 375px) {
+  .page-header .nav-item {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    color: var(--dark-grey-blue);
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
-@media screen and (min-width: 768px) {
-  .nav-item-header {
-    font-family: "Barlow";
-    font-style: normal;
-    font-weight: 700;
-    color: var(--grey);
-    font-size: 0.75rem;
-    line-height: 0.9375rem;
-    letter-spacing: 0.05769rem;
-    text-transform: uppercase;
-    transition: all .3s;
+.nav-item {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  color: var(--grey);
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  letter-spacing: 0.05769rem;
+  text-transform: uppercase;
+  transition: all .3s;
+}
+
+@media screen and (min-width: 1440px) {
+  .nav-item:hover {
+    cursor: pointer;
+    color: var(--dark-grey-blue);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .nav-item-header:hover {
+  .page-footer .nav-item:hover {
     cursor: pointer;
-    color: var(--dark-grey-blue);
+    color: var(--light-cream);
   }
 }
 

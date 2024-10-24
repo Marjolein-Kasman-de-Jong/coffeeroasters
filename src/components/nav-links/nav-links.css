@@ -40,3 +40,18 @@
         transition: top 0s;
     }
 }
+
+.page-footer .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+    .page-footer .nav-links {
+        flex-direction: row;
+        gap: 33px;
+    }
+}
