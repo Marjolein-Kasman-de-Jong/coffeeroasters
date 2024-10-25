@@ -1,10 +1,4 @@
-/* ------------------------------
-1. Business process section
-2. Business process cards wrapper
-3. Business process button
------------------------------- */
-
-/* 1. Business process section */
+/* Business process section */
 
 .business-process {
     width: 87.2%;
@@ -14,6 +8,25 @@
     flex-direction: column;
     align-items: center;
 }
+
+@media screen and (min-width: 768px) {
+    .business-process {
+        width: 89.71%;
+        max-width: unset;
+        margin: 285px auto 0 auto;
+        display: unset;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .business-process {
+        width: 81.96%;
+        max-width: 1045px;
+        margin-top: 200px;
+    }
+}
+
+/* Business process section - Subscribe page */
 
 .subscribe .business-process {
     width: 100%;
@@ -25,13 +38,6 @@
 }
 
 @media screen and (min-width: 768px) {
-    .business-process {
-        width: 89.71%;
-        max-width: unset;
-        margin: 285px auto 0 auto;
-        display: unset;
-    }
-
     .subscribe .business-process {
         max-width: 768px;
         margin: 144px auto 0 auto;
@@ -40,12 +46,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .business-process {
-        width: 81.96%;
-        max-width: 1045px;
-        margin-top: 200px;
-    }
-
     .subscribe .business-process {
         width: 100%;
         max-width: 1280px;
@@ -54,7 +54,22 @@
     }
 }
 
-/* 2. Business process cards wrapper */
+/* Business process heading */
+
+.heading-section-business-process {
+    color: var(--grey);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .heading-section-business-process {
+        text-align: left;
+    }
+}
+
+/* Business process cards wrapper */
 
 .business-process .cards-wrapper {
     margin-top: 80px;
@@ -62,10 +77,6 @@
     flex-direction: column;
     align-items: center;
     gap: 56px;
-}
-
-.subscribe .business-process .cards-wrapper {
-    margin-top: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -83,7 +94,13 @@
     }
 }
 
-/* 3. Business process button */
+/* Business process cards wrapper - Subscribe page */
+
+.subscribe .business-process .cards-wrapper {
+    margin-top: 0;
+}
+
+/* Business process button */
 
 .business-process button {
     margin-top: 79px;

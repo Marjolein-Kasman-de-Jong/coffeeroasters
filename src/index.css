@@ -75,21 +75,6 @@ html {
   font-weight: 900;
 }
 
-
-/* ----Section | Business process */
-.heading-section-business-process {
-  color: var(--grey);
-  font-size: 1.5rem;
-  line-height: 2rem;
-  text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .heading-section-business-process {
-    text-align: left;
-  }
-}
-
 /* ----Section | Commitment */
 
 .heading-section-commitment {
