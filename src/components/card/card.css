@@ -18,7 +18,7 @@
     6.3 Headquarter card text wrapper children
 ------------------------------ */
 
-/* 1. Slide up animation */
+/* Slide up animation */
 
 .card.animate {
     transform: translateY(100px);
@@ -29,7 +29,7 @@
     transform: translateY(0);
 }
 
-/* 2. Card */
+/* Card */
 
 .card {
     display: flex;
@@ -49,7 +49,7 @@
     }
 }
 
-/* 2.1 Text-wrapper */
+/* Card text wrapper */
 
 .card div {
     display: flex;
@@ -66,6 +66,77 @@
 @media screen and (min-width: 1440px) {
     .card div {
         align-items: center;
+    }
+}
+
+/* Card heading */
+
+.heading-card {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .heading-card {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .heading-card {
+        text-align: center;
+    }
+}
+
+/* 
+    Card heading - Collection section 
+    Card heading - Business process section
+*/
+
+.collection .heading-card,
+.business-process .heading-card {
+    color: var(--dark-grey-blue);
+}
+
+/* Card heading - Business process section */
+
+@media screen and (min-width: 1440px) {
+    .business-process .heading-card {
+        text-align: left;
+    }
+}
+
+/* Card heading - Business process section - Subscribe page */
+
+.subscribe .business-process .heading-card {
+    color: var(--light-cream);
+}
+
+/* Card heading - Usps section */
+
+.usps .heading-card {
+    color: var(--light-cream);
+}
+
+/* Card heading - Headquarters section */
+
+.headquarters .heading-card {
+    color: var(--dark-grey-blue);
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+}
+
+@media screen and (min-width: 768px) {
+    .headquarters .heading-card {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .headquarters .heading-card {
+        font-size: 2rem;
+        text-align: left;
     }
 }
 
@@ -384,8 +455,7 @@
 /* 6.3 Headquarter card text wrapper children */
 
 @media screen and (min-width: 1440px) {
-    .card.headquarter div > * {
+    .card.headquarter div>* {
         width: 100%;
     }
 }
-

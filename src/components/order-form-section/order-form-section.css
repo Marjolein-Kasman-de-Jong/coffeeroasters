@@ -63,3 +63,25 @@
 .order-form-section legend {
     display: none;
 }
+
+/* Card heading - Order form section */
+
+.order-form-section .heading-section {
+    color: var(--grey);
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+}
+
+@media screen and (min-width: 768px) {
+    .order-form-section .heading-section {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .order-form-section .heading-section {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+}

@@ -57,7 +57,8 @@ export default function Card({ type, item }) {
             className={`card ${type} ${isIntersecting ? 'show' : ''} ${isColumn ? 'animate' : ''}`}
         >
             {
-                type === "step" && <div className="dot"></div>
+                type === "step" && 
+                <div className="dot"></div>
             }
             {
                 image ?
