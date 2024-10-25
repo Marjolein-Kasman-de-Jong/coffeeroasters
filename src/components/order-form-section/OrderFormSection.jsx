@@ -3,11 +3,11 @@ import { useContext } from "react";
 // Context
 import { OrderContext } from "../../context/OrderContextProvider";
 
-// Hooks
-import useDetailsToggle from "../../hooks/useDetailsToggle";
-
 // Components
 import OrderFormOption from "../order-form-option/OrderFormOption";
+
+// Hooks
+import useDetailsToggle from "../../hooks/useDetailsToggle";
 
 // Styles
 import "./order-form-section.css";

@@ -1,3 +1,5 @@
+/* Order form section */
+
 .order-form-section {
     width: 100%;
     max-width: 328px;
@@ -17,6 +19,8 @@
     }
 }
 
+/* Order form summary */
+
 .order-form-section summary {
     display: flex;
     justify-content: space-between;
@@ -24,6 +28,30 @@
     cursor: pointer;
     list-style: none;
 }
+
+/* Order form heading */
+
+.order-form-section .heading-section {
+    color: var(--grey);
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+}
+
+@media screen and (min-width: 768px) {
+    .order-form-section .heading-section {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .order-form-section .heading-section {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+}
+
+/* Order form image */
 
 .order-form-section summary svg {
     transform: rotateX(0g);
@@ -33,6 +61,8 @@
 .order-form-section.open summary svg {
     transform: rotateX(-180deg);
 }
+
+/* Order form fieldset */
 
 .order-form-section fieldset {
     margin-top: 32px;
@@ -60,28 +90,8 @@
     }
 }
 
+/* Order form legend */
+
 .order-form-section legend {
     display: none;
-}
-
-/* Card heading - Order form section */
-
-.order-form-section .heading-section {
-    color: var(--grey);
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-}
-
-@media screen and (min-width: 768px) {
-    .order-form-section .heading-section {
-        font-size: 2rem;
-        line-height: 3rem;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .order-form-section .heading-section {
-        font-size: 2.5rem;
-        line-height: 3rem;
-    }
 }
