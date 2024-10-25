@@ -1,3 +1,5 @@
+/* Quality section */
+
 .quality {
     width: 87.2%;
     max-width: 327px;
@@ -20,6 +22,8 @@
     }
 }
 
+/* Quality article */
+
 .quality article {
     display: flex;
     flex-direction: column;
@@ -32,6 +36,8 @@
         align-items: unset;
     }
 }
+
+/* Quality image */
 
 .quality picture {
     width: 85.32%;
@@ -55,6 +61,8 @@
     width: 100%;
     border-radius: 8px;
 }
+
+/* Quality text wrapper */
 
 .quality .text-wrapper {
     padding: 142px 24px 61px 24px;
@@ -83,3 +91,26 @@
         background: url(/about/desktop/bg-quality.png);
     }
 }
+
+/* Quality heading */
+
+.heading-section-quality {
+    color: var(--light-cream);
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    text-align: center;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .heading-section-quality {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+  }
+  
+  @media screen and (min-width: 1440px) {
+    .heading-section-quality {
+      font-size: 2.5rem;
+      text-align: left;
+    }
+  }

@@ -75,31 +75,6 @@ html {
   font-weight: 900;
 }
 
-
-
-/* ----Section | Quality */
-
-.heading-section-quality {
-  color: var(--light-cream);
-  font-size: 1.75rem;
-  line-height: 1.75rem;
-  text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .heading-section-quality {
-    font-size: 2rem;
-    line-height: 3rem;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .heading-section-quality {
-    font-size: 2.5rem;
-    text-align: left;
-  }
-}
-
 /* ----Section | Headquarters */
 
 .heading-section-headquarters {

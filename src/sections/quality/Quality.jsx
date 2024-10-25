@@ -6,9 +6,18 @@ export default function Quality() {
     <section className="quality">
       <article>
         <picture>
-          <source media="(min-width: 1440px)" srcSet="./about/desktop/image-quality.jpg" />
-          <source media="(min-width: 768px)" srcSet="./about/tablet/image-quality.jpg" />
-          <img src="./about/mobile/image-quality.jpg" alt="Cappucino" />
+          <source 
+            media="(min-width: 1440px)" 
+            srcSet="./about/desktop/image-quality.jpg" 
+          />
+          <source 
+            media="(min-width: 768px)" 
+            srcSet="./about/tablet/image-quality.jpg" 
+          />
+          <img 
+            src="./about/mobile/image-quality.jpg" 
+            alt="Cappucino" 
+          />
         </picture>
         <div className="text-wrapper">
           <h2 className="heading-section-quality">
