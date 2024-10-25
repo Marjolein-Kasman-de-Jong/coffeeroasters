@@ -75,56 +75,6 @@ html {
   font-weight: 900;
 }
 
-/* 
-   ----Section | Hero | Home page
-   ----Section | Hero | Subscribe page
-*/
-
-.heading-hero-large {
-  color: var(--light-cream);
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .heading-hero-large {
-    font-size: 3rem;
-    line-height: 3rem;
-    text-align: left;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .heading-hero-large {
-    font-size: 4.5rem;
-    line-height: 4.5rem;
-  }
-}
-
-/* ----Section | Hero | About page */
-.heading-hero-small {
-  color: var(--light-cream);
-  font-size: 1.75rem;
-  line-height: 1.75rem;
-  text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .heading-hero-small {
-    font-size: 2rem;
-    line-height: 2.5rem;
-    text-align: left;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .heading-hero-small {
-    font-size: 2.5rem;
-    line-height: 3rem;
-  }
-}
-
 /* ----Section | Collection */
 
 .heading-section-collection {
