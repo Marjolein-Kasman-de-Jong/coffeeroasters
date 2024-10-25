@@ -1,11 +1,4 @@
-/* ------------------------------
-1. Commitment section
-2. Commitment article
-    2.1 Image
-    2.2 Text wrapper
------------------------------- */
-
-/* 1. Commitment section */
+/* Commitment section */
 
 .commitment {
     width: 87.2%;
@@ -35,17 +28,14 @@
     }
 }
 
-/* 2. Commitment article */
-
-/* 2.1 Image */
+/* Commitment image */
 
 .commitment img {
     width: 100%;
-    display: block;
     border-radius: 8px;
 }
 
-/* 2.2 Text wrapper */
+/* Commitment text wrapper */
 
 .commitment .text-wrapper {
     display: flex;
@@ -59,3 +49,24 @@
         justify-content: center;
     }
 }
+
+/* Commitment heading */
+
+.heading-section-commitment {
+    color: var(--dark-grey-blue);
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .heading-section-commitment {
+      text-align: left;
+    }
+  }
+  
+  @media screen and (min-width: 1440px) {
+    .heading-section-commitment {
+      font-size: 2.5rem;
+    }
+  }
