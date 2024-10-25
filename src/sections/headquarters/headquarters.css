@@ -1,3 +1,5 @@
+/* Headquarters section */
+
 .headquarters {
     width: 87.2%;
     max-width: 327px;
@@ -23,6 +25,23 @@
     }
 }
 
+/* Headquarters heading */
+
+.heading-section-headquarters {
+    color: var(--grey);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .heading-section-headquarters {
+      text-align: left;
+    }
+  }
+
+/* Headquarters cards wrapper */
+
 .headquarters .cards-wrapper {
     display: flex;
     flex-direction: column;
@@ -35,4 +54,4 @@
         justify-content: space-between;
         gap: unset;
     }
-}
+} 

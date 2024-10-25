@@ -75,20 +75,6 @@ html {
   font-weight: 900;
 }
 
-/* ----Section | Headquarters */
-
-.heading-section-headquarters {
-  color: var(--grey);
-  font-size: 1.5rem;
-  line-height: 2rem;
-  text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .heading-section-headquarters {
-    text-align: left;
-  }
-}
 
 /* ----Card */
 
