@@ -1,3 +1,5 @@
+/* Order form option */
+
 .order-form-option {
     width: 100%;
     max-width: 328px;
@@ -37,4 +39,17 @@
 
 .order-form-option input {
     display: none;
+}
+
+/* Order form option heading */
+
+.order-form-option .heading-option {
+    color: var(--dark-grey-blue);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    transition: color .3s;
+}
+
+.order-form-option.selected .heading-option {
+    color: var(--light-cream);
 }

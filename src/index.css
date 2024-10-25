@@ -79,20 +79,6 @@ html {
 /* ----Card */
 
 
-
-/* ----Order form options */
-
-.order-form-option .heading-option {
-  color: var(--dark-grey-blue);
-  font-size: 1.5rem;
-  line-height: 2rem;
-  transition: color .3s;
-}
-
-.order-form-option.selected .heading-option {
-  color: var(--light-cream);
-}
-
 /* ----Order form summary */
 
 .order-form-summary .heading-order-summary {
