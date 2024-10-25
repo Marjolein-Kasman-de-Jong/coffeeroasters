@@ -1,3 +1,5 @@
+/* Usps section */
+
 .usps {
     width: 87.2%;
     max-width: 327px;
@@ -27,6 +29,8 @@
     }
 }
 
+/* Usps article */
+
 .usps article {
     display: flex;
     flex-direction: column;
@@ -38,6 +42,31 @@
         gap: 32px;
     }
 }
+
+/* Usps heading */
+
+.heading-section-usps {
+    color: var(--light-cream);
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    text-align: center;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .heading-section-usps {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+  }
+  
+  @media screen and (min-width: 1440px) {
+    .heading-section-usps {
+      font-size: 2.5rem;
+      line-height: 3rem;
+    }
+  }
+
+/* Usps cards wrapper */
 
 .usps .cards-wrapper {
     width: 100%;
