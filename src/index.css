@@ -79,31 +79,6 @@ html {
 /* ----Card */
 
 
-/* ----Order form summary */
-
-.order-form-summary .heading-order-summary {
-  color: var(--white);
-  font-family: "Barlow";
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.625rem;
-  text-transform: uppercase;
-  opacity: 0.5037;
-}
-
-.modal .heading-order-summary {
-  color: var(--white);
-  font-size: 1.75rem;
-  line-height: 2rem;
-}
-
-@media screen and (min-width: 768px) {
-  .modal .heading-order-summary {
-    font-size: 2.5rem;
-    line-height: 3rem;
-  }
-}
-
 /* --Regular paragraphs */
 
 .regular-paragraph {

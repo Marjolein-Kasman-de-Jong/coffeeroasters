@@ -33,26 +33,42 @@ export default function OrderFormSummary() {
         <section className="order-form-summary">
             <article ref={articleRef}>
                 {!isInsideModal && (
-                    <h2 className="heading-order-summary">Order Summary</h2>
+                    <h2 className="heading-order-summary">
+                        Order Summary
+                    </h2>
                 )}
                 <p className="order-form-summary-paragraph">
                     {
-                        sort === "Capsule" ? "“I drink my coffee using " : "“I drink my coffee as "
+                        sort === "Capsule" ? 
+                            "“I drink my coffee using " 
+                            : 
+                            "“I drink my coffee as "
                     }
                     <span>
                         {sort}
                         {
-                            sort === "Capsule" ? "s" : ""
+                            sort === "Capsule" ?
+                                "s" 
+                                : 
+                                ""
                         }
                     </span>
                     {`, with a `}
-                    <span>{type}</span>
+                    <span>
+                        {type}
+                    </span>
                     {` type of bean. `}
-                    <span>{amount}</span>
+                    <span>
+                        {amount}
+                    </span>
                     {` ground ala `}
-                    <span>{grind}</span>
+                    <span>
+                        {grind}
+                    </span>
                     {`, sent to me `}
-                    <span>{interval}</span>
+                    <span>
+                        {interval}
+                    </span>
                     {`.”`}
                 </p>
             </article>

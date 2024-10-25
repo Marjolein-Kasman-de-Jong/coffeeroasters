@@ -1,3 +1,5 @@
+/* Order form summary */
+
 .order-form-summary {
     width: 87.47%;
     max-width: 328px;
@@ -6,8 +8,6 @@
     background-color: var(--very-dark-grey-blue);
     border-radius: 10px;
 }
-
-
 
 @media screen and (min-width: 768px) {
     .order-form-summary {
@@ -26,6 +26,8 @@
     }
 }
 
+/* Order form summary - Modal */
+
 .modal .order-form-summary {
     width: 100%;
     max-width: unset;
@@ -40,8 +42,37 @@
     }
 }
 
+/* Order form summary article */
+
 .order-form-summary article {
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+/* Order form summary heading */
+
+.order-form-summary .heading-order-summary {
+    color: var(--white);
+    font-family: "Barlow";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+    text-transform: uppercase;
+    opacity: 0.5037;
+}
+
+/* Order form summary heading - Modal */
+
+.modal .heading-order-summary {
+    color: var(--white);
+    font-size: 1.75rem;
+    line-height: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .modal .heading-order-summary {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
 }
