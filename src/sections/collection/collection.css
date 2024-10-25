@@ -1,8 +1,28 @@
-.collection h2 {
+/* Collection heading */
+
+.heading-section-collection {
+    color: var(--grey);
+    font-size: 2.5rem;
+    line-height: 4.5rem;
     position: relative;
+    text-align: center;
 }
 
-.collection h2:after {
+@media screen and (min-width: 768px) {
+    .heading-section-collection {
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .heading-section-collection {
+        font-size: 9.375rem;
+        line-height: 9.375rem;
+    }
+}
+
+.heading-section-collection:after {
     content: "";
     position: absolute;
     top: 0;
@@ -12,6 +32,8 @@
     z-index: 10;
     background: linear-gradient(180deg, rgba(254, 252, 247, 0.00) 0%, var(--light-cream) 100%);
 }
+
+/* Collection cards wrapper */
 
 .collection .cards-wrapper {
     margin-top: 13px;
