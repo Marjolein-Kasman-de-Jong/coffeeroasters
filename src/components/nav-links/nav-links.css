@@ -1,3 +1,13 @@
+/* 
+    1   Nav links - Page header
+    2   Nav links - Page footer
+    3   Nav item
+    4   Nav item - Page header
+    5   Nav item - Page footer
+*/
+
+/* 1 Nav links - Page header */
+
 .page-header .nav-links {
     width: 100%;
     max-height: 0px;
@@ -24,7 +34,6 @@
 }
 
 @media screen and (min-width: 768px) {
-
     .page-header .nav-links,
     .page-header .nav-links.open {
         width: auto;
@@ -42,6 +51,8 @@
     }
 }
 
+/* 2 Nav links - Page footer */
+
 .page-footer .nav-links {
     display: flex;
     flex-direction: column;
@@ -57,18 +68,7 @@
     }
 }
 
-/* Nav item */
-
-@media screen and (max-width: 768px) {
-    .page-header .nav-item {
-        font-family: "Fraunces";
-        font-style: normal;
-        font-weight: 900;
-        color: var(--dark-grey-blue);
-        font-size: 1.5rem;
-        line-height: 2rem;
-    }
-}
+/* 3 Nav item */
 
 .nav-item {
     font-family: "Barlow";
@@ -88,6 +88,21 @@
         color: var(--dark-grey-blue);
     }
 }
+
+/* 4 Nav item - Page header */
+
+@media screen and (max-width: 768px) {
+    .page-header .nav-item {
+        font-family: "Fraunces";
+        font-style: normal;
+        font-weight: 900;
+        color: var(--dark-grey-blue);
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+
+/* 5 Nav item - Page footer */
 
 @media screen and (min-width: 1440px) {
     .page-footer .nav-item:hover {
