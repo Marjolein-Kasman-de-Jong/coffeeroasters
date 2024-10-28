@@ -75,10 +75,6 @@ html {
   font-weight: 900;
 }
 
-
-/* ----Card */
-
-
 /* --Regular paragraphs */
 
 .regular-paragraph {
@@ -102,42 +98,6 @@ html {
   .regular-paragraph {
     font-size: 1rem;
     line-height: 1.625rem;
-  }
-}
-
-/* ----Section | Hero */
-
-.hero .regular-paragraph {
-  color: var(--light-cream);
-}
-
-/* ----Section | Usps */
-
-.usps .regular-paragraph {
-  color: var(--light-cream);
-}
-
-@media screen and (min-width: 768px) {
-  .usps .regular-paragraph {
-    text-align: center;
-  }
-}
-
-/* ------Section | Quality */
-
-.quality .regular-paragraph {
-  color: var(--light-cream);
-}
-
-@media screen and (min-width: 768px) {
-  .quality .regular-paragraph {
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .quality .regular-paragraph {
-    text-align: left;
   }
 }
 
