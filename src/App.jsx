@@ -10,9 +10,6 @@ import Subscribe from "./pages/subscribe/Subscribe";
 import PageHeader from "./sections/page-header/PageHeader";
 import PageFooter from "./sections/page-footer/PageFooter";
 
-// Styles
-import "./App.css";
-
 function App() {
   return (
     <>
