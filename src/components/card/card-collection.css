@@ -1,4 +1,12 @@
-/* Card - Collection section */
+/* 
+    1   Card - Collection section
+    2   Card text wrapper - Collection section
+    3   Card heading - Collection section
+    4   Card paragraph - Collection section
+    5   Card image - Collection section
+*/
+
+/* 1 Card - Collection section */
 
 .card.product {
     width: 75.2%;
@@ -22,7 +30,7 @@
     }
 }
 
-/* Card text wrapper - Collection section */
+/* 2 Card text wrapper - Collection section */
 
 .card.product div {
     gap: 16px;
@@ -34,13 +42,13 @@
     }
 }
 
-/* Card heading - Collection section */
+/* 3 Card heading - Collection section */
 
 .collection .heading-card {
     color: var(--dark-grey-blue);
 }
 
-/* Card paragraph - Collection section */
+/* 4 Card paragraph - Collection section */
 
 @media screen and (min-width: 1440px) {
     .collection .card .regular-paragraph {
@@ -48,7 +56,7 @@
     }
 }
 
-/* Card image - Collection section */
+/* 5 Card image - Collection section */
 
 .card.product img {
     width: 71.02%;
