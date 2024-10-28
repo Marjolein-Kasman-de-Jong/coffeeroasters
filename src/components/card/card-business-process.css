@@ -1,0 +1,183 @@
+/* 
+    1   Card animation - Business process section
+    2   Card - Business process section
+    3   Card text wrapper - Business process section
+    4   Card heading - Business process section
+        4.1 Card heading - Business process section - Subscribe page
+    5   Card paragraph - Business process section
+    6   Card number - Business process section
+    7   Card image - Business process section
+*/
+
+/* 1 Card animation - Business process section */
+
+@media screen and (min-width: 768px) {
+    .card.step::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--pale-orange);
+        transition: width 2s ease-in-out;
+    }
+
+    .card.step:nth-child(1)::before {
+        animation: borderWidth1 6s infinite forwards;
+    }
+
+    .card.step:nth-child(2)::before {
+        animation: borderWidth2 6s infinite forwards;
+    }
+
+    @keyframes borderWidth1 {
+        0% {
+            width: 0
+        }
+
+        33% {
+            width: 100%;
+        }
+
+        100% {
+            width: 100%;
+        }
+    }
+
+    @keyframes borderWidth2 {
+        0% {
+            width: 0
+        }
+
+        33% {
+            width: 0;
+        }
+
+        66% {
+            width: 100%;
+        }
+
+        100% {
+            width: 100%;
+        }
+    }
+}
+
+/* 2 Card - Business process section */
+
+.card.step {
+    width: 100%;
+    max-width: 327px;
+    gap: 24px;
+    position: relative;
+}
+
+@media screen and (min-width: 768px) {
+    .card.step {
+        max-width: unset;
+        padding: 62px 17px 0 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 42px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .card.step {
+        margin: 0;
+        padding: 82px 65px 0 0;
+        gap: 38px;
+    }
+}
+
+/* 3 Card text wrapper - Business process section */
+
+.card.step .text-wrapper {
+    gap: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .card.step .text-wrapper {
+        gap: 38px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .card.step .text-wrapper {
+        align-items: flex-start;
+        gap: 42px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card.step .text-wrapper .heading-card {
+        max-width: 175px;
+    }
+}
+
+/* 4 Card heading - Business process section */
+
+.business-process .heading-card {
+    color: var(--dark-grey-blue);
+}
+
+@media screen and (min-width: 1440px) {
+    .business-process .heading-card {
+        text-align: left;
+    }
+}
+
+/* 4.1 Card heading - Business process section - Subscribe page */
+
+.subscribe .business-process .heading-card {
+    color: var(--light-cream);
+}
+
+/* 5 Card paragraph - Business process section */
+
+.subscribe .business-process .card .regular-paragraph {
+    color: var(--light-cream);
+    opacity: .8;
+}
+
+/* 6 Card number - Business process section */
+
+.number {
+    font-family: "Fraunces";
+    font-weight: 900;
+    color: var(--pale-orange);
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .number {
+        text-align: left;
+    }
+}
+
+/* 7 Card image - Business process section */
+
+@media screen and (min-width: 768px) {
+    .dot {
+        width: 31px;
+        height: 31px;
+        position: absolute;
+        transform: translate(0, -77.5px);
+        border: 2px solid var(--dark-cyan);
+        border-radius: 50%;
+        background-color: var(--light-cream);
+    }
+
+    .subscribe .dot {
+        background-color: var(--very-dark-grey-blue);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .dot {
+        transform: translate(0, -97.5px);
+    }
+}

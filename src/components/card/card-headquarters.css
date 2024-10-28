@@ -1,0 +1,100 @@
+/* Card - Headquarters section */
+
+.card.headquarter {
+    width: 100%;
+    gap: 47px;
+}
+
+@media screen and (min-width: 768px) {
+    .card.headquarter {
+        width: 32.41%;
+        max-width: 223px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 48px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .card.headquarter {
+        width: 27.27%;
+        max-width: 285px;
+        gap: 24px;
+    }
+}
+
+/* Card text wrapper - Headquarters section */
+
+.card.headquarter div {
+    width: 100%;
+    gap: 22px;
+}
+
+@media screen and (min-width: 768px) {
+    .card.headquarter div {
+        gap: 21px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .card.headquarter div {
+        gap: 24px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .card.headquarter div>* {
+        width: 100%;
+    }
+}
+
+/* Card heading - Headquarters section */
+
+.headquarters .heading-card {
+    color: var(--dark-grey-blue);
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+}
+
+@media screen and (min-width: 768px) {
+    .headquarters .heading-card {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .headquarters .heading-card {
+        font-size: 2rem;
+        text-align: left;
+    }
+}
+
+/* Card paragraph - Headquarters section */
+
+.headquarters .card address {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    color: var(--dark-grey-blue);
+    font-size: 1rem;
+    line-height: 1.625rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .headquarters .card address {
+        text-align: left;
+    }
+}
+
+/* Card image - Headquarters section */
+
+.card.headquarter img {
+    width: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .card.headquarter img {
+        height: 50px;
+    }
+}
