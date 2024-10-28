@@ -1,4 +1,9 @@
-/* Page header company logo */
+/* 
+    1 Company logo - Page header
+    2 Company logo - Page footer
+*/
+
+/* 1 Company logo - Page header */
 
 .page-header .company-logo {
     width: 163px;
@@ -17,7 +22,7 @@
     }
 }
 
-/* Page footer company logo */
+/* 2 Company logo - Page footer */
 
 .page-footer .company-logo {
     width: 218px;

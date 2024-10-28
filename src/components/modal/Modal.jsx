@@ -29,7 +29,9 @@ export default function Modal({ isOpen, toggleIsOpen }) {
             <div className="overlay"></div>
             <article className="modal">
                 <header>
-                    <h2 className="heading-order-summary">Order Summary</h2>
+                    <h2 className="heading-order-summary">
+                        Order Summary
+                    </h2>
                 </header>
                 <OrderFormSummary />
                 <p className="regular-paragraph">
