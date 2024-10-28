@@ -101,63 +101,6 @@ html {
   }
 }
 
-/* ----Card */
-
-.card .regular-paragraph {
-  opacity: 1;
-}
-
-/* ----Card | Collection */
-
-@media screen and (min-width: 1440px) {
-  .collection .card .regular-paragraph {
-    text-align: center;
-  }
-}
-
-/* ----Card | Usps */
-
-.usps .card .regular-paragraph {
-  color: var(--light-cream);
-}
-
-@media screen and (min-width: 768px) {
-  .usps .card .regular-paragraph {
-    text-align: left;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .usps .card .regular-paragraph {
-    text-align: center;
-  }
-}
-
-/* ----Card | Business process */
-
-.subscribe .business-process .card .regular-paragraph {
-  color: var(--light-cream);
-  opacity: .8;
-}
-
-/* ----Card | Headquarters */
-
-.headquarters .card address {
-  font-family: "Barlow";
-  font-style: normal;
-  font-weight: 400;
-  color: var(--dark-grey-blue);
-  font-size: 1rem;
-  line-height: 1.625rem;
-  text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .headquarters .card address {
-    text-align: left;
-  }
-}
-
 /* ----Order form options */
 
 .order-form-option .regular-paragraph {
