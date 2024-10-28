@@ -1,3 +1,11 @@
+/* 
+    1   Button
+    2   Button - Modal
+    3   Button typography
+*/
+
+/* 1 Button */
+
 button {
     width: 217px;
     height: 56px;
@@ -25,6 +33,8 @@ button:active {
     transform: scale(.98);
 }
 
+/* 2 Button - Modal */
+
 @media screen and (max-width: 768px) {
     .modal button {
         width: 279px;
@@ -32,7 +42,7 @@ button:active {
     }
 }
 
-/* --Buttons */
+/* 3 Button typography */
 
 .button-1 {
     font-family: "Fraunces";
@@ -42,4 +52,4 @@ button:active {
     font-size: 1.125rem;
     line-height: 1.5625rem;
     text-align: center;
-  }
+}
