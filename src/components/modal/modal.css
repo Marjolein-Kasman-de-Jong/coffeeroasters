@@ -29,12 +29,38 @@
     }
 }
 
+/* Modal paragraph */
+
+.modal .regular-paragraph {
+    padding: 0 24px;
+    text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+    .modal .regular-paragraph {
+        padding: 7px 56px 0 56px;
+        font-size: 1rem;
+        line-height: 1.625rem;
+    }
+}
+
 .modal .checkout {
     margin: 47px auto 56px auto;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 13px;
+}
+
+/* Modal price */
+
+.modal .checkout p {
+    color: var(--dark-grey-blue);
+    font-family: "Fraunces";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 2.25rem;
 }
 
 .overlay {
@@ -47,5 +73,3 @@
     opacity: .5;
     z-index: 1000;
 }
-
-

@@ -76,3 +76,24 @@
         line-height: 3rem;
     }
 }
+
+/* Order form summary paragraph */
+
+.order-form-summary-paragraph {
+    color: var(--white);
+    font-family: "Fraunces";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 2.5rem;
+}
+
+.order-form-summary-paragraph span {
+    color: var(--dark-cyan);
+}
+
+/* Order form summary paragraph - Modal */
+
+.modal .order-form-summary-paragraph {
+    color: var(--grey);
+}

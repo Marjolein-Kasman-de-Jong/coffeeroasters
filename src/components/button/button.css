@@ -31,3 +31,15 @@ button:active {
         margin: 24px;
     }
 }
+
+/* --Buttons */
+
+.button-1 {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    color: var(--light-cream);
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+    text-align: center;
+  }

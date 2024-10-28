@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
 
-/* CSS reset */
+/* 
+  1   CSS reset
+  2   Colors
+  3   Body
+  4   Main
+  5   Typography
+      5.1 Headings
+      5.2 Regular paragraphs
+      5.3 Links  
+*/
+
+/* 1 CSS reset */
 
 * {
   margin: 0;
@@ -22,7 +33,7 @@ address {
   font-style: normal;
 }
 
-/* Colors */
+/* 2 Colors */
 
 :root {
   --dark-cyan: #0E8784;
@@ -37,13 +48,13 @@ address {
   --white: #FFF;
 }
 
-/* Body */
+/* 3 Body */
 
 body {
   background-color: var(--light-cream);
 }
 
-/* Main */
+/* 4 Main */
 
 main {
   margin-top: 66px;
@@ -61,13 +72,13 @@ main {
   }
 }
 
-/* Typography */
+/* 5 Typography */
 
 html {
   font-size: 16px;
 }
 
-/* --Headings */
+/* 5.1 Headings */
 
 [class^="heading"] {
   font-family: "Fraunces";
@@ -75,7 +86,7 @@ html {
   font-weight: 900;
 }
 
-/* --Regular paragraphs */
+/* 5.2 Regular paragraphs */
 
 .regular-paragraph {
   font-family: "Barlow";
@@ -101,151 +112,7 @@ html {
   }
 }
 
-/* ----Order form options */
-
-.order-form-option .regular-paragraph {
-  color: var(--dark-grey-blue);
-  font-size: 1rem;
-  line-height: 1.625rem;
-  text-align: left;
-  opacity: 1;
-  transition: color .3s;
-}
-
-.order-form-option.selected .regular-paragraph {
-  color: var(--light-cream);
-}
-
-/* --Numbers */
-
-.number {
-  font-family: "Fraunces";
-  font-weight: 900;
-  color: var(--pale-orange);
-  font-size: 4.5rem;
-  line-height: 4.5rem;
-  text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .number {
-    text-align: left;
-  }
-}
-
-/* --Nav items */
-
-@media screen and (max-width: 768px) {
-  .page-header .nav-item {
-    font-family: "Fraunces";
-    font-style: normal;
-    font-weight: 900;
-    color: var(--dark-grey-blue);
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-}
-
-.nav-item {
-  font-family: "Barlow";
-  font-style: normal;
-  font-weight: 700;
-  color: var(--grey);
-  font-size: 0.75rem;
-  line-height: 0.9375rem;
-  letter-spacing: 0.05769rem;
-  text-transform: uppercase;
-  transition: all .3s;
-}
-
-@media screen and (min-width: 1440px) {
-  .nav-item:hover {
-    cursor: pointer;
-    color: var(--dark-grey-blue);
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .page-footer .nav-item:hover {
-    cursor: pointer;
-    color: var(--light-cream);
-  }
-}
-
-/* ----Order form */
-.nav-item-order-form {
-  color: var(--dark-grey-blue);
-  font-family: "Fraunces";
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 2rem;
-  opacity: .25;
-  transition: opacity .3s;
-}
-
-.nav-item-order-form:hover {
-  opacity: .6;
-}
-
-/* ----Order form summary */
-
-.order-form-summary-paragraph {
-  color: var(--white);
-  font-family: "Fraunces";
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 2.5rem;
-}
-
-.modal .order-form-summary-paragraph {
-  color: var(--grey);
-}
-
-.order-form-summary-paragraph span {
-  color: var(--dark-cyan);
-}
-
-/* ----Modal paragraph */
-
-.modal .regular-paragraph {
-  padding: 0 24px;
-  text-align: left;
-}
-
-@media screen and (min-width: 768px) {
-  .modal .regular-paragraph {
-    padding: 7px 56px 0 56px;
-    font-size: 1rem;
-    line-height: 1.625rem;
-  }
-}
-
-/* Modal price */
-
-.modal .checkout p {
-  color: var(--dark-grey-blue);
-  font-family: "Fraunces";
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 2.25rem;
-}
-
-/* --Buttons */
-
-.button-1 {
-  font-family: "Fraunces";
-  font-style: normal;
-  font-weight: 900;
-  color: var(--light-cream);
-  font-size: 1.125rem;
-  line-height: 1.5625rem;
-  text-align: center;
-}
-
-/* --Links */
+/* 5.3 Links */
 
 a,
 a:visited,

@@ -53,3 +53,18 @@
 .order-form-option.selected .heading-option {
     color: var(--light-cream);
 }
+
+/* Order form option paragraph */
+
+.order-form-option .regular-paragraph {
+    color: var(--dark-grey-blue);
+    font-size: 1rem;
+    line-height: 1.625rem;
+    text-align: left;
+    opacity: 1;
+    transition: color .3s;
+}
+
+.order-form-option.selected .regular-paragraph {
+    color: var(--light-cream);
+}
