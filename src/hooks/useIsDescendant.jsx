@@ -11,7 +11,7 @@ function useIsDescendant(targetClass) {
       const result = element.closest(`.${targetClass}`);
       setIsDescendant(!!result);
     }
-  }, [targetClass]);
+  }, [targetClass])
 
   return [elementRef, isDescendant];
 }

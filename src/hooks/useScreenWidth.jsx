@@ -5,7 +5,7 @@ function useScreenWidth(breakpoint = 768) {
 
     const updateMedia = () => {
         setIsMobile(window.innerWidth < breakpoint);
-    };
+    }
 
     useEffect(() => {
         // Initial setting
@@ -16,7 +16,7 @@ function useScreenWidth(breakpoint = 768) {
 
         // Cleanup
         return () => window.removeEventListener("resize", updateMedia);
-    }, [breakpoint]);
+    }, [breakpoint])
 
     return isMobile;
 }

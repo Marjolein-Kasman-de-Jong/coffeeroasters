@@ -13,7 +13,7 @@ const useParentFlexDirection = (ref) => {
         setIsColumn(true);
       }
     }
-  }, [ref]);
+  }, [ref])
 
   return isColumn;
 }
