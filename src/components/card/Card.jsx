@@ -10,6 +10,7 @@ import "./card.css";
 import "./card-collection.css";
 import "./card-usps.css";
 import "./card-business-process.css";
+import "./card-headquarters.css";
 
 export default function Card({ type, item }) {
     // Set threshold based on screen width

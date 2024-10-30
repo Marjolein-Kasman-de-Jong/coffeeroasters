@@ -1,4 +1,9 @@
-/* Order form nav */
+/* 
+    1   Order form nav
+    2   Order form nav - Horizontal rule
+*/
+
+/* 1 Order form nav */
 
 .order-form-nav {
     display: none;
@@ -14,4 +19,11 @@
     list-style: none;
     counter-reset: list-counter;
     width: 255px;
+}
+
+/* 2 Order form nav horizontal rule */
+
+.order-form-nav hr {
+    border: 1px solid var(--dark-grey-blue);
+    opacity: .25;
 }

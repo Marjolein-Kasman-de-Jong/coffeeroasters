@@ -11,13 +11,14 @@ export default function OrderFormNavItem({ index, item, amountOfItems }) {
     return (
         <>
             <li
-                className="nav-item-order-form"
+                className="order-form-nav-item"
                 onClick={() => scrollToSection(section, 110)}
             >
                 {menuItem}
             </li>
             {
-                index < amountOfItems - 1 && <hr />
+                index < amountOfItems - 1 && 
+                <hr />
             }
         </>
     )

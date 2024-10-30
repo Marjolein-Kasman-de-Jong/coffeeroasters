@@ -1,28 +1,8 @@
-.order-form-nav ol li {
+/* Order form nav item */
+
+.order-form-nav-item {
     counter-increment: list-counter;
     padding: 24px 0 24px 0;
-}
-
-.order-form-nav ol li:first-child {
-    padding: 0 0 24px 0;
-}
-
-.order-form-nav ol li:hover {
-    cursor: pointer;
-}
-
-.order-form-nav ol li::before {
-    content: "0" counter(list-counter);
-    padding-right: 24px;
-}
-
-.order-form-nav hr {
-    border: 1px solid var(--dark-grey-blue);
-    opacity: .25;
-}
-
-/* ----Order form */
-.nav-item-order-form {
     color: var(--dark-grey-blue);
     font-family: "Fraunces";
     font-size: 1.5rem;
@@ -31,8 +11,18 @@
     line-height: 2rem;
     opacity: .25;
     transition: opacity .3s;
-  }
-  
-  .nav-item-order-form:hover {
+}
+
+.order-form-nav-item:first-child {
+    padding: 0 0 24px 0;
+}
+
+.order-form-nav-item::before {
+    content: "0" counter(list-counter);
+    padding-right: 24px;
+}
+
+.order-form-nav-item:hover {
+    cursor: pointer;
     opacity: .6;
-  }
+}

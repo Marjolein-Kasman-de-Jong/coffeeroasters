@@ -4,9 +4,6 @@ import { useState } from "react";
 import NavLinks from "../nav-links/NavLinks";
 import HamburgerMenuIcon from "../hamburger-menu-icon/HamburgerMenuIcon";
 
-// Styles
-import "./navbar.css";
-
 export default function Navbar() {
     const [isOpen, toggleIsOpen] = useState(false);
 
