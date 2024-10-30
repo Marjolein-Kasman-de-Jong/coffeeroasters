@@ -1,4 +1,13 @@
-/* Business process section */
+/* 
+    1   Business process section
+    2   Business process section - Subscribe page
+    3   Business process section - Heading
+    4   Business process section - Cards wrapper
+    5   Business process section - Cards wrapper - Subscribe page
+    6   Business process section - Button
+*/
+
+/* 1 Business process section */
 
 .business-process {
     width: 87.2%;
@@ -26,7 +35,7 @@
     }
 }
 
-/* Business process section - Subscribe page */
+/* 2 Business process section - Subscribe page */
 
 .subscribe .business-process {
     width: 100%;
@@ -54,7 +63,7 @@
     }
 }
 
-/* Business process heading */
+/* 3 Business process section - Heading */
 
 .heading-section-business-process {
     color: var(--grey);
@@ -69,7 +78,7 @@
     }
 }
 
-/* Business process cards wrapper */
+/* 4 Business process section - Cards wrapper */
 
 .business-process .cards-wrapper {
     margin-top: 80px;
@@ -94,13 +103,13 @@
     }
 }
 
-/* Business process cards wrapper - Subscribe page */
+/* 5 Business process section - Cards wrapper - Subscribe page */
 
 .subscribe .business-process .cards-wrapper {
     margin-top: 0;
 }
 
-/* Business process button */
+/* 6 Business process section - Button */
 
 .business-process button {
     margin-top: 79px;

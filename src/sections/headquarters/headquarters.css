@@ -1,4 +1,10 @@
-/* Headquarters section */
+/* 
+    1   Headquarters section
+    2   Headquarters section - Heading
+    3   Headquarters section - Cards wrapper
+*/
+
+/* 1 Headquarters section */
 
 .headquarters {
     width: 87.2%;
@@ -25,7 +31,7 @@
     }
 }
 
-/* Headquarters heading */
+/* 2 Headquarters section - Heading */
 
 .heading-section-headquarters {
     color: var(--grey);
@@ -40,7 +46,7 @@
     }
   }
 
-/* Headquarters cards wrapper */
+/* 3 Headquarters section - Cards wrapper */
 
 .headquarters .cards-wrapper {
     display: flex;

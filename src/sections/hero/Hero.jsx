@@ -46,7 +46,7 @@ export default function Hero() {
 
     // Cleanup
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  }, [])
 
   return (
     <section

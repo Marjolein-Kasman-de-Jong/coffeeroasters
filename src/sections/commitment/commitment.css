@@ -1,4 +1,11 @@
-/* Commitment section */
+/* 
+    1   Commitment section
+    2   Commitment section - Image
+    3   Commitment section - Text wrapper
+    4   Commitment section - Heading
+*/                                                                                                                  
+
+/* 1 Commitment section */
 
 .commitment {
     width: 87.2%;
@@ -28,14 +35,14 @@
     }
 }
 
-/* Commitment image */
+/* 2 Commitment section - Image */
 
 .commitment img {
     width: 100%;
     border-radius: 8px;
 }
 
-/* Commitment text wrapper */
+/* 3 Commitment section - Text wrapper */
 
 .commitment .text-wrapper {
     display: flex;
@@ -50,7 +57,7 @@
     }
 }
 
-/* Commitment heading */
+/* 4 Commitment section - Heading */
 
 .heading-section-commitment {
     color: var(--dark-grey-blue);

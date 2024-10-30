@@ -1,3 +1,10 @@
+/* 
+    1   Page footer
+    2   Page footer - Content wrapper
+*/
+
+/* 1 Page footer */
+
 .page-footer {
     width: 87.2%;
     max-width: 327px;
@@ -32,6 +39,8 @@
         justify-content: space-between;
     }
 }
+
+/* 2 Page footer - Content wrapper */
 
 .page-footer .content-wrapper {
     display: flex;

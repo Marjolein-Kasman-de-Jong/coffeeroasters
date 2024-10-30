@@ -1,4 +1,13 @@
-/* Hero section */
+/* 
+  1   Hero section
+  2   Hero section - Article
+  3   Hero section - Heading - Home page
+  4   Hero section - Heading - Subscribe page
+  5   Hero section - Heading - About page
+  6   Hero section - Paragraph
+*/
+
+/* 1 Hero section */
 
 .hero {
   width: 87.2%;
@@ -32,7 +41,7 @@
   }
 }
 
-/* Hero article */
+/* 2 Hero section - Article */
 
 .hero article {
   display: flex;
@@ -53,8 +62,8 @@
 }
 
 /* 
-   Hero heading - Home page
-   Hero heading - Subscribe page
+  3 Hero section - Heading - Home page
+  4 Hero section - Heading - Subscribe page
 */
 
 .heading-hero-large {
@@ -79,7 +88,7 @@
   }
 }
 
-/* Hero heading - About page */
+/* 5 Hero section - Heading - About page */
 
 .heading-hero-small {
   color: var(--light-cream);
@@ -103,7 +112,7 @@
   }
 }
 
-/* Hero paragraph */
+/* 6 Hero section - Paragraph */
 
 .hero .regular-paragraph {
   color: var(--light-cream);

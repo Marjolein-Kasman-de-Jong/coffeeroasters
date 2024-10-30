@@ -1,4 +1,9 @@
-/* Collection heading */
+/* 
+    1   Collection section - Heading
+    2   Collection section - Cards wrapper
+*/
+
+/* 1 Collection section - Heading */
 
 .heading-section-collection {
     color: var(--grey);
@@ -33,7 +38,7 @@
     background: linear-gradient(180deg, rgba(254, 252, 247, 0.00) 0%, var(--light-cream) 100%);
 }
 
-/* Collection cards wrapper */
+/* 2 Collection section - Cards wrapper */
 
 .collection .cards-wrapper {
     margin-top: 13px;

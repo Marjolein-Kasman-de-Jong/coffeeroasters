@@ -7,9 +7,6 @@ import Headquarters from "../../sections/headquarters/Headquarters";
 // Hooks
 import useScrollToTop from "../../hooks/useScrollToTop";
 
-// Styles
-import "./about-us.css";
-
 export default function AboutUs() {
   useScrollToTop();
   

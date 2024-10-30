@@ -1,4 +1,12 @@
-/* Usps section */
+/* 
+    1   Usps section
+    2   Usps section - Article
+    3   Usps section - Heading
+    4   Usps section - Paragraph
+    5   Usps section - Cards wrapper
+*/
+
+/* 1 Usps section */
 
 .usps {
     width: 87.2%;
@@ -29,7 +37,7 @@
     }
 }
 
-/* Usps article */
+/* 2 Usps section - Article */
 
 .usps article {
     display: flex;
@@ -43,7 +51,7 @@
     }
 }
 
-/* Usps heading */
+/* 3 Usps section - Heading */
 
 .heading-section-usps {
     color: var(--light-cream);
@@ -66,7 +74,7 @@
     }
 }
 
-/* Usps paragraph */
+/* 4 Usps section - Paragraph */
 
 .usps .regular-paragraph {
     color: var(--light-cream);
@@ -78,7 +86,7 @@
     }
 }
 
-/* Usps cards wrapper */
+/* 5 Usps section - Cards wrapper */
 
 .usps .cards-wrapper {
     width: 100%;

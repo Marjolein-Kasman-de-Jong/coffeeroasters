@@ -40,7 +40,10 @@ export default function OrderForm() {
           Create my plan!
         </Button>
       </form>
-      <Modal isOpen={isOpen} toggleIsOpen={toggleIsOpen} />
+      <Modal 
+        isOpen={isOpen} 
+        toggleIsOpen={toggleIsOpen} 
+      />
     </section>
   )
 }

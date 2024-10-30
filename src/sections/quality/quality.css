@@ -1,4 +1,13 @@
-/* Quality section */
+/* 
+    1   Quality section
+    2   Quality section - Article
+    3   Quality section - Image
+    4   Quality section - Text wrapper
+    5   Quality section - Heading
+    6   Quality section - Paragraph
+*/
+
+/* 1 Quality section */
 
 .quality {
     width: 87.2%;
@@ -22,7 +31,7 @@
     }
 }
 
-/* Quality article */
+/* 2 Quality section - Article */
 
 .quality article {
     display: flex;
@@ -37,7 +46,7 @@
     }
 }
 
-/* Quality image */
+/* 3 Quality section - Image */
 
 .quality picture {
     width: 85.32%;
@@ -62,7 +71,7 @@
     border-radius: 8px;
 }
 
-/* Quality text wrapper */
+/* 4 Quality section - Text wrapper */
 
 .quality .text-wrapper {
     padding: 142px 24px 61px 24px;
@@ -92,7 +101,7 @@
     }
 }
 
-/* Quality heading */
+/* 5 Quality section - Heading */
 
 .heading-section-quality {
     color: var(--light-cream);
@@ -115,7 +124,7 @@
     }
 }
 
-/* Quality paragraph */
+/* 6 Quality section - Paragraph */
 
 .quality .regular-paragraph {
     color: var(--light-cream);

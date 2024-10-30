@@ -1,3 +1,12 @@
+/* 
+    1   Order form section
+    2   Order form section - Order form
+    3   Order form section - Order form sections wrapper
+    4   Order form section - Button
+*/
+
+/* 1 Order form section */
+
 .order {
     margin-top: 112px;
 }
@@ -18,10 +27,14 @@
     }
 }
 
+/* 2 Order form section - Order form */
+
 .order-form {
     display: flex;
     flex-direction: column;
 }
+
+/* 3 Order form section - Order form sections wrapper */
 
 .order-form-sections-wrapper {
     display: flex;
@@ -41,6 +54,8 @@
         gap: 88px;
     }
 }
+
+/* 4 Order form section - Button */
 
 .order-form button {
     margin: 56px auto 0 auto;
