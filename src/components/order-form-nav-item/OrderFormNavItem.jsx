@@ -18,7 +18,7 @@ export default function OrderFormNavItem({ index, item, amountOfItems }) {
             </li>
             {
                 index < amountOfItems - 1 && 
-                <hr />
+                    <hr />
             }
         </>
     )

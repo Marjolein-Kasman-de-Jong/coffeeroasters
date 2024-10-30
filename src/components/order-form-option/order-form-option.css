@@ -1,4 +1,17 @@
-/* Order form option */
+/* 
+    1   Order form option
+    2   Order form option - Selected
+    3   Order form option - Heading
+    4   Order form option - Heading - Selected
+    5   Order form option - Paragraph
+    6   Order form option - Paragraph - Selected  
+*/
+
+/* 1 Order form option */
+
+.order-form-option input {
+    display: none;
+}
 
 .order-form-option {
     width: 100%;
@@ -33,15 +46,13 @@
     }
 }
 
+/* 2 Order form option - Selected */
+
 .order-form-option.selected {
     background-color: var(--dark-cyan)
 }
 
-.order-form-option input {
-    display: none;
-}
-
-/* Order form option heading */
+/* 3 Order form option - Heading */
 
 .order-form-option .heading-option {
     color: var(--dark-grey-blue);
@@ -50,11 +61,13 @@
     transition: color .3s;
 }
 
+/* 4 Order form option - Heading - Selected */
+
 .order-form-option.selected .heading-option {
     color: var(--light-cream);
 }
 
-/* Order form option paragraph */
+/* 5 Order form option - Paragraph */
 
 .order-form-option .regular-paragraph {
     color: var(--dark-grey-blue);
@@ -64,6 +77,8 @@
     opacity: 1;
     transition: color .3s;
 }
+
+/* 6 Order form option - Paragraph - Selected */
 
 .order-form-option.selected .regular-paragraph {
     color: var(--light-cream);

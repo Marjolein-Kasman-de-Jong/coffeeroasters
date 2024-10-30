@@ -1,4 +1,13 @@
-/* Order form section */
+/* 
+    1   Order form section
+    2   Order form section - Summary
+    3   Order form section - Summary - Heading
+    4   Order form section - Summary - Image
+    5   Order form section - Fieldset
+    6   Order form section - Fieldset - Legend
+*/
+
+/* 1 Order form section */
 
 .order-form-section {
     width: 100%;
@@ -19,7 +28,7 @@
     }
 }
 
-/* Order form summary */
+/* 2 Order form section - Summary */
 
 .order-form-section summary {
     display: flex;
@@ -29,7 +38,7 @@
     list-style: none;
 }
 
-/* Order form heading */
+/* 3 Order form section - Summary - Heading */
 
 .order-form-section .heading-section {
     color: var(--grey);
@@ -51,7 +60,7 @@
     }
 }
 
-/* Order form image */
+/* 4 Order form section - Summary - Image */
 
 .order-form-section summary svg {
     transform: rotateX(0g);
@@ -62,7 +71,7 @@
     transform: rotateX(-180deg);
 }
 
-/* Order form fieldset */
+/* 5 Order form section - Fieldset */
 
 .order-form-section fieldset {
     margin-top: 32px;
@@ -90,7 +99,7 @@
     }
 }
 
-/* Order form legend */
+/* 6 Order form section - Fielset - Legend */
 
 .order-form-section legend {
     display: none;

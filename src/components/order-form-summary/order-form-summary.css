@@ -42,7 +42,7 @@
     }
 }
 
-/* Order form summary article */
+/* Order form summary - Article */
 
 .order-form-summary article {
     display: flex;
@@ -50,7 +50,7 @@
     gap: 8px;
 }
 
-/* Order form summary heading */
+/* Order form summary - Heading */
 
 .order-form-summary .heading-order-summary {
     color: var(--white);
@@ -62,7 +62,7 @@
     opacity: 0.5037;
 }
 
-/* Order form summary heading - Modal */
+/* Order form summary - Heading - Modal */
 
 .modal .heading-order-summary {
     color: var(--white);
@@ -77,7 +77,7 @@
     }
 }
 
-/* Order form summary paragraph */
+/* Order form summary - Paragraph */
 
 .order-form-summary-paragraph {
     color: var(--white);
@@ -92,7 +92,7 @@
     color: var(--dark-cyan);
 }
 
-/* Order form summary paragraph - Modal */
+/* Order form summary - Paragraph - Modal */
 
 .modal .order-form-summary-paragraph {
     color: var(--grey);
