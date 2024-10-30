@@ -1,4 +1,14 @@
-/* Order form summary */
+/* 
+    1   Order form summary
+    2   Order form summary - Modal
+    3   Order form summary - Article
+    4   Order form summary - Heading
+    5   Order form summary - Heading - Modal
+    6   Order form summary - Paragraph
+    7   Order form summary - Paragraph - Modal
+*/
+
+/* 1 Order form summary */
 
 .order-form-summary {
     width: 87.47%;
@@ -26,7 +36,7 @@
     }
 }
 
-/* Order form summary - Modal */
+/* 2 Order form summary - Modal */
 
 .modal .order-form-summary {
     width: 100%;
@@ -42,7 +52,7 @@
     }
 }
 
-/* Order form summary - Article */
+/* 3 Order form summary - Article */
 
 .order-form-summary article {
     display: flex;
@@ -50,7 +60,7 @@
     gap: 8px;
 }
 
-/* Order form summary - Heading */
+/* 4 Order form summary - Heading */
 
 .order-form-summary .heading-order-summary {
     color: var(--white);
@@ -62,7 +72,7 @@
     opacity: 0.5037;
 }
 
-/* Order form summary - Heading - Modal */
+/* 5 Order form summary - Heading - Modal */
 
 .modal .heading-order-summary {
     color: var(--white);
@@ -77,7 +87,7 @@
     }
 }
 
-/* Order form summary - Paragraph */
+/* 6 Order form summary - Paragraph */
 
 .order-form-summary-paragraph {
     color: var(--white);
@@ -92,7 +102,7 @@
     color: var(--dark-cyan);
 }
 
-/* Order form summary - Paragraph - Modal */
+/* 7 Order form summary - Paragraph - Modal */
 
 .modal .order-form-summary-paragraph {
     color: var(--grey);
